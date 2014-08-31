@@ -1,4 +1,4 @@
-"NAME";"TYPE";"WHEN";"Longitude";"Latitude";"ADDRESS";"zip";"CALL";"FORWHOM"
+"NAME";"TYPE";"WHEN";Longitude;Latitude;"ADDRESS";zip;"CALL";"FORWHOM"
 "St. Ladislas Church (at St. Ignatius of Antioch)";"Hot Meal";"1st & 3rd Wednesdays: 5:30 - 6:30";;;"10205 Lorain Avenue";44111;"216-251-0300";"Open to Anyone"
 "St. Ladislas Church (at St. Ignatius of Antioch)";"Pantry";"2nd Tuesday: 3:30 - 5:30";;;"10205 Lorain Avenue";44111;"216-251-0300";"44102 and 44111"
 "Morning Star Baptist Church";"Hot Meal";"2nd, 3rd & 4th Wednesdays: 3:00 - 4:30 (closed in July)";;;"10250 Shaker Boulevard";44104;"216-721-7300";"Open to Anyone"
@@ -149,8 +149,7 @@ School District, which is Gates Mills, Highland Heights, Mayfield Heights and Ma
 "Triedstone Community Care Center";"Pantry";"Tuesdays & Thursdays: 10:00 - 1:00";;;"3782 Community CollegeAvenue";44115;"216-432-9749";"Within this area: East 22nd Street, Central Avenue, East 40th Street & Woodland Avenue" 
 "WSEM Food Center at Brookside Hunger Center";"Pantry";"Mondays - Fridays: 10:00 - 2:00";;;"3802 Pearl Road";44109;"216-749-4295";"44102, 44109, 44129, 44130, 44144 & Within this area: South to Tiedeman Road, North to Storer Avenue, West 72nd Street & East 2nd Street"
 "Bethany Christian Church";"Hot Meal";"Last Wednesday: 5:30 - 6:30";;;"3940 Martin Luther King Jr Boulevard";44105;"216-341-1132";"Open to Anyone"
-"Bridge of Hope Center";"Pantry";"1st / 3rd Fridays: 5:00 - 8:00 & 1st / 3rd
-Saturdays: 9:00 - 12:00";;;"3949 Lee Road";44128;"216-276-0571";"Within this area: East 151st Street, East 189th Street, Harvard Avenue & Stockbridge Avenue"
+"Bridge of Hope Center";"Pantry";"1st / 3rd Fridays: 5:00 - 8:00 & 1st / 3rd Saturdays: 9:00 - 12:00";;;"3949 Lee Road";44128;"216-276-0571";"Within this area: East 151st Street, East 189th Street, Harvard Avenue & Stockbridge Avenue"
 "May Dugan Multi Service Center";"Pantry";"4th Wednesday: 9:00 - 1:00 (Open the 3rd Wednesday in November & December)";;;"4115 Bridge Avenue";44113;"216-631-5800";"Near Westside of Cleveland"
 "St. Paul AME Church";"Pantry";"Fridays: 9:30 - 12:00";;;"4118 Brookside Boulevard";44135;"216-941-6767";
 "Confirmed Word Faith Center";"Pantry";"1st & 3rd Saturdays: 10:00 - 12:00";;;"4130 East 131st Street";44105;"216-704-8602";"Open to Anyone"
@@ -235,22 +234,11 @@ Saturdays: 9:00 - 12:00";;;"3949 Lee Road";44128;"216-276-0571";"Within this are
 "Denison Avenue United Church of Christ";"Pantry";"4th Tuesday: 10:00 - 11:30";;;"9900 Denison Avenue";44102;"216-631-0904";"44102 & 44111"
 "East Mount Zion Baptist Church";"Pantry";"Saturday after the 3rd Sunday (Except Thanksgiving & Christmas): 10:30 - 11:30";;;"9990 Euclid Avenue";44106;"216-231-0408";"Open to Anyone"
 "From Darkness to Light";"Pantry";"Last Wednesday by Appointment";;;"Delivery Program";;"800-335-8834";"Open to Anyone"
-"All Faiths Pantry";"Pantry";"According to Delivery Schedule Mondays - Saturdays for Seniors and the Homebound
-(Contact program for more information)";;;"Delivery Program for
-Seniors/Homebound";;"216-496-4329";"Berea, Brook Park,
-Brooklyn, Cleveland's Old
-Brooklyn Neighborhood,
-Middleburg Heights,
-North Royalton, Parma &
-Parma Heights"
-"Rescuing the Perishing  Inc.";"Hot Meal";"Tuesdays: 7:00 - 8:00";;;"
-1700 Payne Avenue";44114;"440-777-3333";"Open to Anyone"
+"All Faiths Pantry";"Pantry";"According to Delivery Schedule Mondays - Saturdays for Seniors and the Homebound (Contact program for more information)";;;"Delivery Program for Seniors/Homebound";;"216-496-4329";"Berea, Brook Park, Brooklyn, Cleveland's Old Brooklyn Neighborhood, Middleburg Heights, North Royalton, Parma & Parma Heights"
+"Rescuing the Perishing  Inc.";"Hot Meal";"Tuesdays: 7:00 - 8:00";;;"1700 Payne Avenue";44114;"440-777-3333";"Open to Anyone"
 "A.C.E. Ministry / Affinity Baptist Church";"Hot Meal";"Saturdays: 4:00 - 9:00";;;"Shelter / Mobile Route";;"216-283-4365";"Shelter / Mobile Route"
-"Manna Food From Heaven Ministries";"Hot Meal";"1st Saturday: 4:00 - 6:00 AM & Thursdays: 12:00
-- 1:00";;;"Shelter / Mobile Route";;"N / A";"Shelter / Mobile Route"
-"Salvation Army - Canteen";"Hot Meal";"Times and Stops along the Route Vary (Contact
-program for more information)";;;"Shelter / Mobile Route";;"216-619-4707";"Shelter / Mobile Route"
-"St. Paschal's Helping Hands";"Hot Meal";"Wednesdays: 4:30 - 9:30 PM & Saturdays: 4:30 -
-10:00 PM";;;"Shelter / Mobile Route";;"440-442-3410";"Shelter / Mobile Route"
+"Manna Food From Heaven Ministries";"Hot Meal";"1st Saturday: 4:00 - 6:00 AM & Thursdays: 12:00- 1:00";;;"Shelter / Mobile Route";;"N / A";"Shelter / Mobile Route"
+"Salvation Army - Canteen";"Hot Meal";"Times and Stops along the Route Vary (Contact program for more information)";;;"Shelter / Mobile Route";;"216-619-4707";"Shelter / Mobile Route" 
+"St. Paschal's Helping Hands";"Hot Meal";"Wednesdays: 4:30 - 9:30 PM & Saturdays: 4:30 - 10:00 PM";;;"Shelter / Mobile Route";;"440-442-3410";"Shelter / Mobile Route"
 "The Labre Project";"Hot Meal";"Fridays: 5:00 - 11:00 PM";;;"Shelter / Mobile Route";;"216-397-6227";"Shelter / Mobile Route"
 "We Care Connection";"Hot Meal";"2nd & 3rd Sundays: 1:00 - 6:00";;;"Shelter / Mobile Route";;"216-661-7379";"Shelter / Mobile Route"
