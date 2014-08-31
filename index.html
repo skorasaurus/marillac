@@ -35,8 +35,8 @@ var mizzap = L.mapbox.map('themap', 'skorasaurus.jcedc433')
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.NAME + '\nAddress: ' + polygon.feature.properties.ADDRESS + 
-      '\nPhone ' + polygon.feature.properties.CALL );
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress: ' + polygon.feature.properties.address + '\nkind: ' + polygon.feature.properties.kind +
+      '\nPhone ' + polygon.feature.properties.call );
          }); 
     });   
 
