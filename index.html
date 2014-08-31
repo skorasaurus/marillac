@@ -32,7 +32,15 @@ var mizzap = L.mapbox.map('themap', 'skorasaurus.jcedc433')
 
    featLayer.loadURL('places.geojson'); 
 
-       
+
+featLayer.on('ready', function() { 
+     featLayer.eachLayer(function(polygon) { 
+      polygon.bindPopup('Name: ' + polygon.feature.properties.NAME + '\nAddress: ' + polygon.feature.properties.ADDRESS + 
+      '\nPhone ' + polygon.feature.properties.CALL );
+         }); 
+    });   
+
+
 
             </script>
         
