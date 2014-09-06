@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST RUNNER &mdash; jQuery Plugin for LiveAddress API</title>
+	<meta charset="utf-8">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+	<!--  /* <script src="lib/jquery-2_0_2.js"></script>
+	<script src="src/jquery.liveaddress.js"></script> */ -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/2.4/jquery.liveaddress.min.js"></script> 
+	<script>
+	
+		/** CONFIGURE **/
+
+		var htmlKey = "3548360835023561920";			// Put your HTML key here
+		var debug = false;					// Toggle debug mode
+
+		var testRunnerVersion = "1.1.6";	// The version of this test runner page
+
+
+		/** PREPARE FORM(S) **/
+		
+		$(function()
+		{
+			$('form#submitEvent').submit(function() {
+				alert("Form submit. Verification should happen first (if necessary), then this should occur.");
+			});
+		});
+
+
+		/** INITIALIZE **/
+
+		var liveaddress = $.LiveAddress({
+			key: htmlKey,		// An HTML key from your account
+			debug: debug,		// Show debug stuff
+			cityStatePreference: "Cleveland, OH", // prefer Cle cities
+			stateFilter: "OH" // only autcomplete ohio
+		});
+
+          // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
+		liveaddress.on("AddressAccepted", function(event, data, previousHandler)
+		{
+		if (data.response.chosen)
+		console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
+		previousHandler(event, data);
+		});
+
+	</script>
+	<style>
+	body {
+		font: 400 16px/1.5em 'Open Sans', sans-serif;
+		padding: 15px 50px;
+		background: #F3F3F3;
+		text-shadow: 0 1px 0 #FFF;
+		min-width: 400px;
+	}
+
+	a {
+		color: #1790db;
+	}
+
+	.smarty-container a {
+		text-shadow: none;
+	}
+
+	h1, h2 {
+		text-align: center;
+		color: #222;
+		text-shadow: none;
+	}
+
+	hgroup {
+		background: #DDD;
+		padding: 1px 1px 5px;
+		margin-bottom: 50px;
+		position: relative;
+		border-radius: 10px;
+	}
+
+	#revision, #version {
+		font-size: 14px;
+		padding: 0 10px;
+		font-weight: 300;
+	}
+
+	#version {
+		position: absolute;
+		right: 0px;
+	}
+
+	h1 {
+		font: 600 45px/1em 'Open Sans', 'Helvetica Neue', sans-serif;
+		margin-bottom: 5px;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 1em;
+	}
+
+	h2 a {
+		text-decoration: none;
+	}
+
+	form {
+		border: 5px solid #AAA;
+		width: 350px;
+		background: #FFF;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		float: left;
+		position: relative;
+	}
+
+	form header {
+		padding: 10px 15px 0;
+		background: #F0F0F0;
+	}
+
+	form header p {
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+
+	form header h3 {
+		font-weight: 300;
+		font-size: 27px;
+		margin: 0;
+		padding-bottom: 10px;
+	}
+
+	form table {
+		margin: 15px 10px;
+		font-size: 14px;
+	}
+
+	form table td {
+		padding: 5px;
+	}
+
+	form input[type=text],
+	form textarea {
+		padding: 5px 5px 3px;
+		font: 12px/1em sans-serif;
+		width: 160px;
+		outline: none;
+	}
+
+	form select {
+		outline: none;
+	}
+
+	form textarea {
+		min-height: 40px;
+	}
+
+	form input[type=submit],
+	form [type=image],
+	form button {
+		font-size: 16px;
+	}
+
+	.formNumber {
+		background: #3d3d3d;
+		color: #FFF;
+		width: 25px;
+		height: 25px;
+		padding: 5px;
+		text-align: center;
+		border-radius: 20px;
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		font-size: 14px;
+		box-shadow: 0 1px 2px #222;
+		text-shadow: none;
+	}
+
+	.clear {
+		border: none;
+		background: none;
+		clear: both;
+	}
+
+	label {
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+
+	<hgroup>
+		<h1>LiveAddress API jQuery Plugin</h1>
+		<h2>Test Runner &mdash; by <a href="http://smartystreets.com/" target="_blank">SmartyStreets</a></h2>
+		<span id="revision">Revision: <script>document.write(testRunnerVersion);</script> / Debug mode: <script>document.write(debug ? "on" : "off");</script></span>
+		<span id="version">jQuery version: <script>document.write($.fn.jquery);</script> / Plugin version: <script>document.write(liveaddress.version);</script></span>
+	</hgroup>
+
+
+
+	
+	<form id="happyPath">
+		<header>
+			<h3>Happy path</h3>
+			<p>The simplest, most traditional kind of address form</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+
+	<form id="street2">
+		<header>
+			<h3>Street 2 Field</h3>
+			<p>Traditional address form containing a street line 2 field</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>Street line 2:</td>
+				<td><input type="text" name="streetTwo"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="slap">
+		<header>
+			<h3>SLAP</h3>
+			<p>Single-Line (freeform) Address Processing: the whole address contained in one field</p>
+		</header>
+		<table>
+			<tr>
+				<td>Address:</td>
+				<td><textarea name="street_address"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+
+	<form id="twoSlap">
+		<header>
+			<h3>Two SLAP addresses</h3>
+			<p>One might be for shipping, the other might be for billing</p>
+		</header>
+		<table>
+			<tr>
+				<td>Billing address:</td>
+				<td><textarea name="billing-address"></textarea></td>
+			</tr>
+			<tr>
+				<td>Ship to:</td>
+				<td><textarea name="ship-address"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+	<hr class="clear">
+
+
+	<form id="twoAddresses">
+		<header>
+			<h3>Two addresses</h3>
+			<p>Likely, one would be a billing address, and the other would probably be shipping</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="country">
+		<header>
+			<h3>Country field</h3>
+			<p>Non-US addresses should be allowed to pass thru freely</p>
+		</header>
+		<table>
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="town"></td>
+			</tr>
+			<tr>
+				<td>Province:</td>
+				<td><input type="text" name="province"></td>
+			</tr>
+			<tr>
+				<td>Postal Code:</td>
+				<td><input type="text" name="post-code"></td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td><select size="1" name="country" required="required" style="width: 85%;">
+						<option selected="selected" value="US">United States</option>
+						<option value="CA">Canada</option> 
+						<option value="GB">United Kingdom</option> 
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="incomplete">
+		<header>
+			<h3>Incomplete address</h3>
+			<p>When there's not enough information to verify an address, the fields shouldn't be mapped</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+
+	<form id="onClick">
+		<header>
+			<h3>onclick Handler</h3>
+			<p>Submit button has an "onclick" attribute which should fire if the button is clicked</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form" onclick="alert('onclick handler; this should happen AFTER address verification')"></td>
+			</tr>
+		</table>
+	</form>
+
+
+	<hr class="clear">
+
+
+	<form id="similarFieldNames">
+		<header>
+			<h3>Similar field names</h3>
+			<p>Fields all contain the word "address" and not all fields should be mapped</p>
+		</header>
+		<table>
+			<tr>
+				<td>Company:</td>
+				<td><input type="text" name="address_company"></td>
+			</tr>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="address_street1"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="address_city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="address_state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="address_zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="easyLabels">
+		<header>
+			<h3>Map using labels</h3>
+			<p>Fields contain vague or irrelevant names/IDs; use associated labels instead</p>
+		</header>
+		<table>
+			<tr>
+				<td><label for="fieldTest1">Street address:</label></td>
+				<td><input type="text" name="field[0]" id="fieldTest1"></td>
+			</tr>
+			<tr>
+				<td><label for="fieldTest2">City:</label></td>
+				<td><input type="text" name="field[1]" id="fieldTest2"></td>
+			</tr>
+			<tr>
+				<td><label for="fieldTest3">State:</label></td>
+				<td><input type="text" name="field[2]" id="fieldTest3"></td>
+			</tr>
+			<tr>
+				<td><label for="fieldTest4">ZIP Code:</label></td>
+				<td><input type="text" name="field[3]" id="fieldTest4"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="onSubmit" onsubmit="alert('onsubmit handler; this should happen AFTER address verification')">
+		<header>
+			<h3>onsubmit Handler</h3>
+			<p>Form has onsubmit="" attribute which should fire when form is submitted</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+	<form id="twoHandlers" onsubmit="alert('onsubmit handler; this should happen AFTER address verification and the onclick handlers')">
+		<header>
+			<h3>Two handlers</h3>
+			<p>First the address should be verified, then the submit button's onclick handlers should fire, then the form's onsubmit handlers last</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form" onclick="alert('onclick handler; this should happen AFTER address verification and BEFORE onsubmit handlers')"></td>
+			</tr>
+		</table>
+	</form>
+
+
+	<hr class="clear">
+	
+	
+	
+	<form id="submitEvent">
+		<header>
+			<h3>Submit event handler</h3>
+			<p>No submit button; form submit() invoked with jQuery should fire verification, if necessary, THEN a handler bound to submit, THEN submit the form.</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="javascript:$('form#submitEvent').submit();">Submit Form</a></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+	
+	
+	<form id="lastline-address">
+		<header>
+			<h3>First line / Last line</h3>
+			<p>Address formatted by only a street and lastline field.</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>City/State/ZIP:</td>
+				<td><input type="text" name="lastline"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+	
+	<form id="secondaryAndStreet2Field">
+		<header>
+			<h3>Secondary/Street2 fields</h3>
+			<p>Form has both secondary and street2 fields, which ought not get confused. (No form should ever need both...)</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>Address 2:</td>
+				<td><input type="text" name="secondLine"></td>
+			</tr>
+			<tr>
+				<td>Unit:</td>
+				<td><input type="text" name="secondary"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+
+	
+	
+	
+	
+	<form id="stateDropdown">
+		<header>
+			<h3>State dropdown menu</h3>
+			<p>Option values should be uppercase state abbreviations when at all possible, but this example uses lower-case abbreviations for failover testing. (No dropdown should ever default to a non-blank value, but this one does.)</p>
+		</header>
+		<table>
+			<tr>
+				<td>Street address:</td>
+				<td><input type="text" name="street"></td>
+			</tr>
+			<tr>
+				<td>ZIP Code:</td>
+				<td><input type="text" name="zip"></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>State:</td>
+				<td>
+					<select name="state">
+						<option value="al">AL</option>
+						<option value="ak">AK</option>
+						<option value="az">AZ</option>
+						<option value="ar">AR</option>
+						<option value="ca">CA</option>
+						<option value="co">CO</option>
+						<option value="ct">CT</option>
+						<option value="dc">DC</option>
+						<option value="de">DE</option>
+						<option value="fl">FL</option>
+						<option value="ga">GA</option>
+						<option value="hi">HI</option>
+						<option value="id">ID</option>
+						<option value="il">IL</option>
+						<option value="in">IN</option>
+						<option value="ia">IA</option>
+						<option value="ks">KS</option>
+						<option value="ky">KY</option>
+						<option value="la">LA</option>
+						<option value="me">ME</option>
+						<option value="md">MD</option>
+						<option value="ma">MA</option>
+						<option value="mi">MI</option>
+						<option value="mn">MN</option>
+						<option value="ms">MS</option>
+						<option value="mo">MO</option>
+						<option value="mt">MT</option>
+						<option value="ne">NE</option>
+						<option value="nv">NV</option>
+						<option value="nh">NH</option>
+						<option value="nj">NJ</option>
+						<option value="nm">NM</option>
+						<option value="ny">NY</option>
+						<option value="nc">NC</option>
+						<option value="nd">ND</option>
+						<option value="oh">OH</option>
+						<option value="ok">OK</option>
+						<option value="or">OR</option>
+						<option value="pa">PA</option>
+						<option value="ri">RI</option>
+						<option value="sc">SC</option>
+						<option value="sd">SD</option>
+						<option value="tn">TN</option>
+						<option value="tx">TX</option>
+						<option value="ut">UT</option>
+						<option value="vt">VT</option>
+						<option value="va">VA</option>
+						<option value="wa">WA</option>
+						<option value="wv">WV</option>
+						<option value="wi">WI</option>
+						<option value="wy">WY</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit Form"></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+	<hr class="clear">
+	
+
+
+
+<script>
+$(function() {
+	// Prevent forms, by default, from leaving the page, so we can keep testing
+	$('form').submit(function(event) {
+		alert("Default form submit; actual POST prevented");
+		return suppress(event);
+	});
+
+	// Show the form index number so debug info can be connected to DOM elements visually
+	$('form').each(function(idx) {
+		$(this).append('<div class="formNumber">'+idx+'</div>');
+	});
+});
+
+// Enable this to prevent accidentally leaving the page
+/*
+window.onbeforeunload = function() {
+	return "Page is attempting to leave or reload";
+};
+*/
+
+function suppress(event) {
+	if (!event) return false;
+	if (event.preventDefault) event.preventDefault();
+	if (event.stopPropagation) event.stopPropagation();
+	if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+	if (event.cancelBubble) event.cancelBubble = true;
+	return false;
+}
+</script>
+
+</body>
+</html>

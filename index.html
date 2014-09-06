@@ -6,6 +6,9 @@
 
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/2.4/jquery.liveaddress.min.js"></script> 
+
 <title> title </title> 
     </head>
   <body>
@@ -18,8 +21,9 @@
 <div id="themap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
 
         <script> 
+// initialize liveaddress
+jQuery.LiveAddress("3548360835023561920");
 
- // prepare for 2.0 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g'; 
 
 var mizzap = L.mapbox.map('themap', 'skorasaurus.jcedc433')
@@ -30,8 +34,7 @@ var mizzap = L.mapbox.map('themap', 'skorasaurus.jcedc433')
               // https://github.com/maptime/maptime-bites/blob/gh-pages/00004/index.html
                var featLayer = L.mapbox.featureLayer().addTo(mizzap);
 
-   featLayer.loadURL('places.geojson'); 
-
+featLayer.loadURL('places.geojson'); 
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
