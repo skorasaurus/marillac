@@ -114,9 +114,6 @@
 
 <script> 
 
-
-
-
 // begin mapbox code    
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g'; 
@@ -133,7 +130,7 @@ featLayer.loadURL('places.geojson');
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.name + 'Address: ' + polygon.feature.properties.address + 'kind: ' + polygon.feature.properties.kind +
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress: ' + polygon.feature.properties.address + ' kind: ' + polygon.feature.properties.kind +
       'Phone ' + polygon.feature.properties.call );
          }); 
     });   
@@ -166,12 +163,13 @@ featLayer.on('ready', function() {
       stateFilter: "OH" // only autcomplete ohio
     });
 
-          // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
+    // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
+    //grab coordinates and then pan to the coords, 
     liveaddress.on("AddressAccepted", function(event, data, previousHandler)
     {
     if (data.response.chosen)
     console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-    l.panTo(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude); 
+    mizzap.panTo(L.latLng(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude)); 
     previousHandler(event, data);
     });
 
