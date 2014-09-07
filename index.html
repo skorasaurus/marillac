@@ -32,11 +32,6 @@
     background: #F0F0F0;
   }
 
-  form header p {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-  }
 
   form header h3 {
     font-weight: 300;
@@ -73,15 +68,13 @@
   form input[type=submit],
   form [type=image],
   form button {
-    font-size: 16px;
+    font-size: 13px;
   }
 </style>
 
  <form id="happyPath">
     <header>
-      <h3>Happy path</h3>
-      <p>The simplest, most traditional kind of address form</p>
-    </header>
+      <h3>Input Address</h3> </header>
     <table>
       <tr>
         <td>Street address:</td>
@@ -130,8 +123,8 @@ featLayer.loadURL('places.geojson');
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress: ' + polygon.feature.properties.address + ' kind: ' + polygon.feature.properties.kind +
-      'Phone ' + polygon.feature.properties.call );
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress\: ' + polygon.feature.properties.address + ' Kind: ' + polygon.feature.properties.kind +
+      ' Phone: ' + polygon.feature.properties.call );
          }); 
     });   
 
@@ -169,7 +162,7 @@ featLayer.on('ready', function() {
     {
     if (data.response.chosen)
     console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-    mizzap.panTo(L.latLng(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude)); 
+    mizzap.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 16);
     previousHandler(event, data);
     });
 
@@ -177,33 +170,8 @@ featLayer.on('ready', function() {
 
 
 </script>
-        
-function() { 
-
-}
-
 
 <script>
-$(function() {
-  // Prevent forms, by default, from leaving the page, so we can keep testing
-  $('form').submit(function(event) {
-    alert("Default form submit; actual POST prevented");
-    return suppress(event);
-  });
-
-  // Show the form index number so debug info can be connected to DOM elements visually
-  $('form').each(function(idx) {
-    $(this).append('<div class="formNumber">'+idx+'</div>');
-  });
-});
-
-// Enable this to prevent accidentally leaving the page
-/*
-window.onbeforeunload = function() {
-  return "Page is attempting to leave or reload";
-};
-*/
-
 function suppress(event) {
   if (!event) return false;
   if (event.preventDefault) event.preventDefault();
