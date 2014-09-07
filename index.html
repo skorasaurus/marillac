@@ -11,43 +11,6 @@
 <!-- <script src="mylive.js"></script> 
  -->
 
-        <script> 
-
-/** CONFIGURE **/
-
-    var htmlKey = "3548360835023561920";      // Put your HTML key here
-    var debug = true;          // Toggle debug mode
-
-    var testRunnerVersion = "1.1.6";  // The version of this test runner page
-
-
-    /** PREPARE FORM(S) **/
-    
-    $(function()
-    {
-      $('form#submitEvent').submit(function() {
-        alert("Form submit. Verification should happen first (if necessary), then this should occur.");
-      });
-    });
-
-
-    /** INITIALIZE **/
-
-    var liveaddress = $.LiveAddress({
-      key: htmlKey,   // An HTML key from your account
-      debug: debug,   // Show debug stuff
-      cityStatePreference: "Cleveland, OH", // prefer Cle cities
-      stateFilter: "OH" // only autcomplete ohio
-    });
-
-          // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
-    liveaddress.on("AddressAccepted", function(event, data, previousHandler)
-    {
-    if (data.response.chosen)
-    console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-    previousHandler(event, data);
-    });
-</script> 
 
 <title> title </title> 
     </head>
@@ -151,6 +114,9 @@
 
 <script> 
 
+
+
+
 // begin mapbox code    
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoic2tvcmFzYXVydXMiLCJhIjoiaEdGTUZWTSJ9.osOC8tWU3bMaNprVNoEu7g'; 
@@ -167,14 +133,57 @@ featLayer.loadURL('places.geojson');
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress: ' + polygon.feature.properties.address + '\nkind: ' + polygon.feature.properties.kind +
-      '\nPhone ' + polygon.feature.properties.call );
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + 'Address: ' + polygon.feature.properties.address + 'kind: ' + polygon.feature.properties.kind +
+      'Phone ' + polygon.feature.properties.call );
          }); 
     });   
 
 
-            </script>
+/** CONFIGURE **/
+
+    var htmlKey = "3548360835023561920";      // Put your HTML key here
+    var debug = true;          // Toggle debug mode
+
+    var testRunnerVersion = "1.1.6";  // The version of this test runner page
+
+
+    /** PREPARE FORM(S) **/
+    
+    $(function()
+    {
+      $('form#submitEvent').submit(function() {
+        alert("Form submit. Verification should happen first (if necessary), then this should occur.");
+      });
+    });
+
+
+    /** INITIALIZE **/
+
+    var liveaddress = $.LiveAddress({
+      key: htmlKey,   // An HTML key from your account
+      debug: debug,   // Show debug stuff
+      cityStatePreference: "Cleveland, OH", // prefer Cle cities
+      stateFilter: "OH" // only autcomplete ohio
+    });
+
+          // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
+    liveaddress.on("AddressAccepted", function(event, data, previousHandler)
+    {
+    if (data.response.chosen)
+    console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
+    l.panTo(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude); 
+    previousHandler(event, data);
+    });
+
+
+
+
+</script>
         
+function() { 
+
+}
+
 
 <script>
 $(function() {
