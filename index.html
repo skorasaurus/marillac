@@ -12,7 +12,7 @@
  -->
 
 
-<title> title </title> 
+<title> Marillac: Helping pantry managers find other pantries for their clients</title> 
     </head>
   <body>
   <style>
@@ -123,8 +123,9 @@ featLayer.loadURL('places.geojson');
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '\nAddress\: ' + polygon.feature.properties.address + ' Kind: ' + polygon.feature.properties.kind +
-      ' Phone: ' + polygon.feature.properties.call );
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '<br \/>' + 'Address: ' + polygon.feature.properties.address + '<br \/>' + 
+        'Kind: ' + polygon.feature.properties.kind + '<br \/>' +
+        'Phone: ' + polygon.feature.properties.call );
          }); 
     });   
 
