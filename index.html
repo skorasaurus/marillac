@@ -18,9 +18,8 @@
   <style>
  /* HACKY CODE FROM https://github.com/smartystreets/jquery.liveaddress/blob/master/index.html */  
   form {
-    border: 5px solid #AAA;
+    border: 2px solid #AAA;
     width: 350px;
-    background: #FFF;
     margin-right: 25px;
     margin-bottom: 25px;
     float: left;
@@ -46,7 +45,7 @@
   }
 
   form table td {
-    padding: 5px;
+    padding: 2px;
   }
 
   form input[type=text],
@@ -71,6 +70,8 @@
     font-size: 13px;
   }
 </style>
+
+<div id="themap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
 
  <form id="happyPath">
     <header>
@@ -101,7 +102,6 @@
  
 </div>
 
-<div id="themap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
 
  
 
@@ -123,9 +123,12 @@ featLayer.loadURL('places.geojson');
 
 featLayer.on('ready', function() { 
      featLayer.eachLayer(function(polygon) { 
-      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '<br \/>' + 'Address: ' + polygon.feature.properties.address + '<br \/>' + 
-        'Kind: ' + polygon.feature.properties.kind + '<br \/>' +
-        'Phone: ' + polygon.feature.properties.call );
+      polygon.bindPopup('Name: ' + polygon.feature.properties.name + '<br \/>' + 
+        'Kind: ' + polygon.feature.properties.kind + '<br \/>' + 
+        'When: ' + polygon.feature.properties.when + '<br \/>' + 
+        'Open to: ' + polygon.feature.properties.forwhom + '<br \/>' + 
+        'Address: ' + polygon.feature.properties.address + '<br \/>' + 
+        'Phone: ' + polygon.feature.properties.call ); 
          }); 
     });   
 
@@ -163,7 +166,7 @@ featLayer.on('ready', function() {
     {
     if (data.response.chosen)
     console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-    mizzap.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 16);
+    mizzap.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
     previousHandler(event, data);
     });
 
