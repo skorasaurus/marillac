@@ -17,6 +17,12 @@
   <body>
   <style>
  /* HACKY CODE FROM https://github.com/smartystreets/jquery.liveaddress/blob/master/index.html */  
+
+#themap {
+  width: 100%; height: 600px; border: 1px solid #ccc;
+  position:absolute;
+}
+
   form {
     border: 2px solid #AAA;
     width: 350px;
@@ -71,11 +77,12 @@
   }
 </style>
 
-<div id="themap" style="width: 100%; height: 600px; border: 1px solid #ccc;"></div>
+
+<div id="themap"></div>
 
  <form id="happyPath">
     <header>
-      <h3>Input Address</h3> </header>
+      <h3>          Input Address</h3> </header>
     <table>
       <tr>
         <td>Street address:</td>
