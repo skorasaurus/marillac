@@ -8,7 +8,7 @@
         "kind": "Hot Meal",
         "when": "1st & 3rd Wednesdays: 5:30 - 6:30",
         "address": "10205 Lorain Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-251-0300",
         "forwhom": "Open to Anyone"
       },
@@ -27,7 +27,7 @@
         "kind": "Pantry",
         "when": "2nd Tuesday: 3:30 - 5:30",
         "address": "10205 Lorain Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-251-0300",
         "forwhom": "44102 and 44111"
       },
@@ -46,7 +46,7 @@
         "kind": "Hot Meal",
         "when": "2nd, 3rd & 4th Wednesdays: 3:00 - 4:30 (closed in July)",
         "address": "10250 Shaker Boulevard",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-721-7300",
         "forwhom": "Open to Anyone"
       },
@@ -65,7 +65,7 @@
         "kind": "Hot Meal",
         "when": "First Wednesday: 2:00 - 4:00 (closed in July)",
         "address": "10250 Shaker Boulevard",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-721-7300",
         "forwhom": "Open to Anyone"
       },
@@ -84,7 +84,7 @@
         "kind": "Hot Meal",
         "when": "3rd Monday: 4:00 - 5:30",
         "address": "10313 Garfield Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-851-3330",
         "forwhom": "Open to Anyone"
       },
@@ -103,7 +103,7 @@
         "kind": "Pantry",
         "when": "4th Saturday: 10:00 - 12:00",
         "address": "10407 Adams Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-541-2210",
         "forwhom": "Open to Anyone"
       },
@@ -122,7 +122,7 @@
         "kind": "Hot Meal",
         "when": "3rd Thursday, 3rd Friday & 3rd Sunday: 5:00 - 6:00 (Closed in January)",
         "address": "10512 Bryant Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-761-4447",
         "forwhom": "Open to Anyone"
       },
@@ -141,7 +141,7 @@
         "kind": "Pantry",
         "when": "1st Saturday: 1:00 - 3:00; 3rd Wednesday: 2:00 - 4:00",
         "address": "10512 Bryant Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-761-3971",
         "forwhom": "44108 & 44110"
       },
@@ -160,7 +160,7 @@
         "kind": "Hot Meal",
         "when": "Last Saturday: 12:00 - 1:00 PM",
         "address": "10723 Magnolia Drive",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-791-5760",
         "forwhom": "Open to Anyone"
       },
@@ -179,7 +179,7 @@
         "kind": "Hot Meal",
         "when": "Last Thursday: 6:00 - 8:00",
         "address": "10902 Avon Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-341-0505",
         "forwhom": "Open to Anyone"
       },
@@ -198,9 +198,9 @@
         "kind": "Pantry",
         "when": "Tuesdays  Thursdays & Fridays: 10:00 – 12:00",
         "address": "10902 Avon Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-883-6120",
-        "forwhom": "44105"
+        "forwhom": 44105
       },
       "geometry": {
         "type": "Point",
@@ -217,7 +217,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 8:30 - 12:00",
         "address": "10917 Miles Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-883-8071",
         "forwhom": ""
       },
@@ -236,7 +236,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 5:00 - 6:00",
         "address": "10932 St. Clair Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-451-3262",
         "forwhom": "Open to Anyone"
       },
@@ -255,7 +255,7 @@
         "kind": "Pantry",
         "when": "4th Saturday: 8:30 - 11:30",
         "address": "10932 St. Clair Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-451-3262",
         "forwhom": "44104, 44106, 44108 and 44110"
       },
@@ -274,7 +274,7 @@
         "kind": "Pantry",
         "when": "Tuesdays  Thursdays & Fridays: 2:30 – 4:30",
         "address": "11123 Buckeye Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-421-0053",
         "forwhom": "Within this area: East 93rd Street, East 149th Street, Mt. Overlook Avenue and Kinsman Road"
       },
@@ -293,7 +293,7 @@
         "kind": "Pantry",
         "when": "Mondays  Tuesdays & Thursdays: 8:00 – 12:00",
         "address": "1117 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-451-0577",
         "forwhom": "Glenville and St. Clair -Superior"
       },
@@ -312,7 +312,7 @@
         "kind": "Hot Meal",
         "when": "Last 7 Days of the Month (excluding Saturdays & Sundays): Winter: 4:30 - 5:30 and Summer: 5:30 - 6:30",
         "address": "1117 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-451-0460",
         "forwhom": "Glenville"
       },
@@ -331,7 +331,7 @@
         "kind": "Hot Meal",
         "when": "4th Thursday: 6:00 - 7:00",
         "address": "11315 Regalia Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-991-0655",
         "forwhom": "Open to Anyone"
       },
@@ -350,7 +350,7 @@
         "kind": "Pantry",
         "when": "4th Saturday: 12:00 - 2:00",
         "address": "11501 Mt. Carmel Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "No Site Number Available",
         "forwhom": "Open to Anyone"
       },
@@ -369,7 +369,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 9:30 - 11:30",
         "address": "1161 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-795-1842",
         "forwhom": "Open to Anyone"
       },
@@ -388,7 +388,7 @@
         "kind": "Hot Meal",
         "when": "3rd Saturday: 12:00 - 1:00",
         "address": "11901 Oakfield Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-491-0699",
         "forwhom": "Open to Anyone"
       },
@@ -407,7 +407,7 @@
         "kind": "Hot Meal",
         "when": "Saturdays: 12:00 - 1:00",
         "address": "11901 Oakfield Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-491-0699",
         "forwhom": "44105 and 44120"
       },
@@ -426,7 +426,7 @@
         "kind": "Pantry",
         "when": "Saturdays: 1:00 - 2:00 & Last Tuesday: 6:00 - 7:00",
         "address": "11901 Oakfield Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-491-0699",
         "forwhom": "44105 and 44120"
       },
@@ -445,7 +445,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 10:00 - 12:00",
         "address": "12020 Buckeye Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "No Site Number Available",
         "forwhom": "Open to Anyone"
       },
@@ -464,7 +464,7 @@
         "kind": "Pantry",
         "when": "4th Saturday (3rd Saturday in November & December) : 7:30 - 10:00 AM",
         "address": "1211 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-791-2673",
         "forwhom": "44103, 44106, 44108 & 44110"
       },
@@ -483,7 +483,7 @@
         "kind": "Pantry",
         "when": "Wednesdays & Thursdays: 10:00 - 2:00",
         "address": "12210 Miles Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-271-9271",
         "forwhom": "Open to Anyone"
       },
@@ -502,7 +502,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 10:30 - 12:00",
         "address": "12401 Cooley Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-671-4619",
         "forwhom": "Cleveland Residents"
       },
@@ -521,7 +521,7 @@
         "kind": "Hot Meal",
         "when": "2nd Saturday: 5:30 - 7:00",
         "address": "12501 Lake Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-521-7424",
         "forwhom": "Open to Anyone"
       },
@@ -540,7 +540,7 @@
         "kind": "Hot Meal",
         "when": "Sundays: 5:00 - 7:00; Mondays - Fridays: 10:00 - 12:00",
         "address": "12618 Shaw Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-268-5127",
         "forwhom": "Open to Anyone"
       },
@@ -559,7 +559,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 5:00 - 6:00",
         "address": "12618 Shaw Avenue",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-268-5127",
         "forwhom": "Open to Anyone"
       },
@@ -578,9 +578,9 @@
         "kind": "Pantry",
         "when": "3rd Tuesday, 3rd Wednesday & 3rd Thursday: 9:00 - 12:00",
         "address": "1264 East 123rd Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-268-3909",
-        "forwhom": "44108"
+        "forwhom": 44108
       },
       "geometry": {
         "type": "Point",
@@ -597,7 +597,7 @@
         "kind": "Pantry",
         "when": "Mondays - Thursdays: 9:00 - 11:30",
         "address": "12645 Lorain Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-252-3593",
         "forwhom": "44102, 44107, 44111, 44116, 44126, 44129, 44130, 44134, 44135, 44136, 44140, 44142 and 44145"
       },
@@ -616,7 +616,7 @@
         "kind": "Hot Meal",
         "when": "Fridays: 5:00 - 6:45",
         "address": "12701 Superior Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-761-3133",
         "forwhom": "Open to Anyone"
       },
@@ -635,7 +635,7 @@
         "kind": "Hot Meal",
         "when": "Mondays - Fridays: 9:00 - 10:00",
         "address": "12833 Lorain Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-941-3270",
         "forwhom": "Open to Anyone"
       },
@@ -654,7 +654,7 @@
         "kind": "Pantry",
         "when": "Wednesdays: 5:30 - 7:30",
         "address": "12833 Lorain Avenue",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-941-3270",
         "forwhom": "44111 & 44135"
       },
@@ -673,7 +673,7 @@
         "kind": "Pantry",
         "when": "4th Friday: 8:00 - 11:00",
         "address": "12919 Superior Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-761-3133",
         "forwhom": "Open to Anyone"
       },
@@ -692,7 +692,7 @@
         "kind": "Hot Meal",
         "when": "3rd Monday: 5:00 - 7:00",
         "address": "13030 Madison Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-221-4959",
         "forwhom": "Open to Anyone"
       },
@@ -711,9 +711,9 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 2:30 - 5:30; Saturdays: 8:30 - 11:30",
         "address": "13101 Euclid Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-451-1151",
-        "forwhom": "44112"
+        "forwhom": 44112
       },
       "geometry": {
         "type": "Point",
@@ -730,7 +730,7 @@
         "kind": "Hot Meal",
         "when": "2nd Thursday: 5:00 - 6:00",
         "address": "13216 Detroit Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-521-8727",
         "forwhom": "Open to Anyone"
       },
@@ -749,7 +749,7 @@
         "kind": "Pantry",
         "when": "1st Saturday: 12:00 - 2:00",
         "address": "13455 Dressler Avenue",
-        "zip": "44125",
+        "zip": 44125,
         "call": "216-365-3336",
         "forwhom": "44105, 44125, 44137, 44146"
       },
@@ -768,7 +768,7 @@
         "kind": "Hot Meal",
         "when": "4th Wednesday: 6:00",
         "address": "13500 Detroit Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-221-3776 x592",
         "forwhom": "Open to Anyone"
       },
@@ -787,7 +787,7 @@
         "kind": "Pantry",
         "when": "2nd Saturday: 1:00 - 3:00",
         "address": "13515 Harvard Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-295-2501",
         "forwhom": ""
       },
@@ -806,7 +806,7 @@
         "kind": "Hot Meal",
         "when": "1st Wednesday: 5:30 - 7:00",
         "address": "1375 West Clifton Boulevard",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-221-9555",
         "forwhom": "Cleveland & Lakewood"
       },
@@ -825,7 +825,7 @@
         "kind": "Hot Meal",
         "when": "2nd & 4th Saturdays: 12:00 - 3:00",
         "address": "13816 St. Clair Avenue",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-541-5505",
         "forwhom": "Open to Anyone"
       },
@@ -844,7 +844,7 @@
         "kind": "Pantry",
         "when": "Saturdays: 10:00 - 1:00",
         "address": "13824 Euclid Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-541-3540",
         "forwhom": "44106, 44108, 44110, 44112, 44118, 44121 & 44143"
       },
@@ -863,7 +863,7 @@
         "kind": "Hot Meal",
         "when": "2nd Sunday: 12:30 - 1:30 (closed if the 2nd Sunday is a holiday)",
         "address": "14040 Puritas Avenue",
-        "zip": "44135",
+        "zip": 44135,
         "call": "216-671-5890",
         "forwhom": "Open to Anyone"
       },
@@ -882,7 +882,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Thursdays: 11:30 - 1:30",
         "address": "14102 Harvard Avenue",
-        "zip": "44128",
+        "zip": 44128,
         "call": "No Site Number Available",
         "forwhom": "Open to Anyone"
       },
@@ -901,7 +901,7 @@
         "kind": "Pantry",
         "when": "Mondays - Fridays: 10:00 - 2:00 & Wednesdays: 5:30 - 7:30 PM",
         "address": "14230 Madison Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-6466",
         "forwhom": "Lakewood, Rocky River & Westlake"
       },
@@ -920,7 +920,7 @@
         "kind": "Pantry",
         "when": "Mondays  Wednesdays & Fridays: 11:00 – 2:00",
         "address": "1424 Hayden Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-541-1665",
         "forwhom": "Open to Anyone"
       },
@@ -939,7 +939,7 @@
         "kind": "Hot Meal",
         "when": "1st  2nd & 3rd Wednesdays: 4:00 – 6:00",
         "address": "1428 East 110th Street",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-421-1953",
         "forwhom": "Open to Anyone"
       },
@@ -958,7 +958,7 @@
         "kind": "Hot Meal",
         "when": "Last Sunday: 11:30 - 2:00",
         "address": "14502 Detroit Road",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-0514",
         "forwhom": "Open to Anyone"
       },
@@ -977,9 +977,9 @@
         "kind": "Pantry",
         "when": "4th Wednesday: 4:00 - 6:00",
         "address": "14516 Euclid Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-541-6825",
-        "forwhom": "44112"
+        "forwhom": 44112
       },
       "geometry": {
         "type": "Point",
@@ -996,7 +996,7 @@
         "kind": "Hot Meal",
         "when": "Thursdays: 11:00 - 1:00",
         "address": "14681 Euclid Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-375-9400",
         "forwhom": "Open to Anyone"
       },
@@ -1015,7 +1015,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 10:00 - 12:00",
         "address": "14715 Euclid Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-486-8464",
         "forwhom": ""
       },
@@ -1034,7 +1034,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 2:00 - 4:00",
         "address": "14735 Thames Avenue",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-541-2628",
         "forwhom": "Open to Anyone"
       },
@@ -1053,7 +1053,7 @@
         "kind": "Pantry",
         "when": "2nd Thursday: 4:00 - 6:00",
         "address": "14912 Saranac Road",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-451-5477",
         "forwhom": "Open to Anyone"
       },
@@ -1072,9 +1072,9 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 10:00 - 1:00",
         "address": "1505 East 260th Street",
-        "zip": "44132",
+        "zip": 44132,
         "call": "216-732-8204",
-        "forwhom": "44132"
+        "forwhom": 44132
       },
       "geometry": {
         "type": "Point",
@@ -1091,7 +1091,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 5:30 - 7:30 & Thursdays: 1:30 - 3:30",
         "address": "15135 Triskett Road",
-        "zip": "44111",
+        "zip": 44111,
         "call": "216-251-0782",
         "forwhom": "Within this area: Lakewood border, West 117th Street, Lorain Avenue and Fairview Park border. They also serve Fairview Park."
       },
@@ -1110,7 +1110,7 @@
         "kind": "Pantry",
         "when": "Mondays  Wednesdays & Fridays: 11:45 – 2:30",
         "address": "15220 Lakeshore Boulevard",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-531-1156",
         "forwhom": "44110 & 44119"
       },
@@ -1129,7 +1129,7 @@
         "kind": "Hot Meal",
         "when": "2nd & Last Mondays: 6:00 - 7:00",
         "address": "15519 Holmes Avenue",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-761-7740",
         "forwhom": "Open to Anyone"
       },
@@ -1148,7 +1148,7 @@
         "kind": "Hot Meal",
         "when": "4th Tuesday: 6:00 - 7:00",
         "address": "15700 Detroit Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-8644",
         "forwhom": "Open to Anyone"
       },
@@ -1167,7 +1167,7 @@
         "kind": "Hot Meal",
         "when": "Saturdays: 4:30 - 5:30",
         "address": "1629 East 66th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-432-1234",
         "forwhom": "Open to Anyone"
       },
@@ -1186,7 +1186,7 @@
         "kind": "Pantry",
         "when": "Last Saturday: 10:00 - 12:00",
         "address": "1629 East 66th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-432-1234",
         "forwhom": "Open to Anyone"
       },
@@ -1205,7 +1205,7 @@
         "kind": "Hot Meal",
         "when": "3rd Tuesday: meal starts at 5:30",
         "address": "16305 Hilliard Road",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-221-4324",
         "forwhom": "Open to Anyone"
       },
@@ -1224,7 +1224,7 @@
         "kind": "Hot Meal",
         "when": "Thursdays: Meal Starts at 5:30",
         "address": "1632 East 55th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-881-3115",
         "forwhom": "Open to Anyone"
       },
@@ -1243,9 +1243,9 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 11:00 - 2:00",
         "address": "1632 East 55th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-881-3115",
-        "forwhom": "44103"
+        "forwhom": 44103
       },
       "geometry": {
         "type": "Point",
@@ -1262,7 +1262,7 @@
         "kind": "Pantry",
         "when": "1st Saturday: 9:30 - 12:30 & 2nd Sunday: 2:30 - 5:30",
         "address": "16400 Detroit Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-8087",
         "forwhom": "Cleveland and Lakewood"
       },
@@ -1281,7 +1281,7 @@
         "kind": "Hot Meal",
         "when": "1st Monday: 6:00 - 7:30; 1st Saturday: Noon; 3rd Saturday: 12:00 - 1:00 & 2nd Sunday: 4:00 - 5:30",
         "address": "16400 Detroit Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-8087",
         "forwhom": "Westside of Cleveland and Lakewood"
       },
@@ -1300,7 +1300,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 10:00 - 1:00",
         "address": "1643 East 55th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-3688",
         "forwhom": ""
       },
@@ -1319,7 +1319,7 @@
         "kind": "Hot Meal",
         "when": "2nd Monday: 5:30 - 7:00",
         "address": "16511 Hilliard Road",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-226-6500",
         "forwhom": "Open to Anyone"
       },
@@ -1338,7 +1338,7 @@
         "kind": "Hot Meal",
         "when": "Last Thursday: 5:30 - 7:00",
         "address": "1659 Rosewood Avenue",
-        "zip": "44107",
+        "zip": 44107,
         "call": "216-228-6060",
         "forwhom": "Open to Anyone"
       },
@@ -1357,7 +1357,7 @@
         "kind": "Pantry",
         "when": "3rd Sunday: 2:00 - 4:00",
         "address": "16602 Tarkington Avenue",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-662-3080",
         "forwhom": "Open to Anyone"
       },
@@ -1376,7 +1376,7 @@
         "kind": "Pantry",
         "when": "Mondays & Wednesdays: 11:00 - 1:00",
         "address": "16718 Miles Avenue",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-752-9384",
         "forwhom": "44128, Garfield Heights & Warrensville Heights"
       },
@@ -1395,7 +1395,7 @@
         "kind": "Pantry",
         "when": "Mondays: 11:00 - 2:00 & Thursdays: 4:00 - 7:00",
         "address": "16845 Holland Road",
-        "zip": "44142",
+        "zip": 44142,
         "call": "216-433-1515",
         "forwhom": "Open to Anyone"
       },
@@ -1414,7 +1414,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 12:00 - 3:00; Wednesdays: 9:00 - 12:00 & Thursdays: 4:30 - 7:30",
         "address": "17100 Broadway Avenue",
-        "zip": "44137",
+        "zip": 44137,
         "call": "216-365-2842",
         "forwhom": "Maple Heights"
       },
@@ -1433,7 +1433,7 @@
         "kind": "Hot Meal",
         "when": "Mondays - Fridays: Breakfast: 8:00 - 9:00 & Lunch: 12:00 - 3:00",
         "address": "1736 Superior Avenue",
-        "zip": "44114",
+        "zip": 44114,
         "call": "216-781-8262",
         "forwhom": "Open to Anyone"
       },
@@ -1452,7 +1452,7 @@
         "kind": "Pantry",
         "when": "3rd Wednesday & 3rd Friday: 9:00 - 10:30",
         "address": "1736 Superior Avenue",
-        "zip": "44114",
+        "zip": 44114,
         "call": "216-781-8262",
         "forwhom": "44114 & 44115"
       },
@@ -1471,7 +1471,7 @@
         "kind": "Hot Meal",
         "when": "1st  3rd 4th & 5th Saturdays: 12:00",
         "address": "1744 Payne Avenue",
-        "zip": "44114",
+        "zip": 44114,
         "call": "440-546-1120",
         "forwhom": "Open to Anyone"
       },
@@ -1490,7 +1490,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 5:30 - 6:30 & Saturdays: 12:00 -1:00",
         "address": "17625 Grovewood Avenue",
-        "zip": "44119",
+        "zip": 44119,
         "call": "216-692-1388",
         "forwhom": "Open to Anyone"
       },
@@ -1509,7 +1509,7 @@
         "kind": "Pantry",
         "when": "Mondays - Thursdays: 9:00 - 11:30",
         "address": "17625 Grovewood Avenue",
-        "zip": "44119",
+        "zip": 44119,
         "call": "216-692-1388",
         "forwhom": "44110, 44112, 44117,44118, 44119, 44121, 44123, 44124, 44132, 44143 and Collinwood"
       },
@@ -1528,7 +1528,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 9:00 - 12:00; Wednesdays: 9:00 -12:00 & Thursdays: 1:00 - 3:00",
         "address": "18240 Harvard Avenue",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-991-8585",
         "forwhom": "44105, 44120, 44122 & 44128"
       },
@@ -1547,7 +1547,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 12:00 - 3:00",
         "address": "18316 St. Clair Avenue",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-481-4827",
         "forwhom": "Collinwood - Nottingham"
       },
@@ -1566,7 +1566,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 11:30 - 1:30",
         "address": "1862 Noble Road",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-249-7000",
         "forwhom": "44108, 44110, 44112, 44118, 44121 and 44143"
       },
@@ -1585,7 +1585,7 @@
         "kind": "Hot Meal",
         "when": "2nd  3rd & 4th Mondays: 5:00 – 7:00",
         "address": "1881 East 71st Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-2100",
         "forwhom": "Open to Anyone"
       },
@@ -1604,7 +1604,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 10:00 - 12:00",
         "address": "1881 East 71st Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-2100",
         "forwhom": "Open to Anyone"
       },
@@ -1623,7 +1623,7 @@
         "kind": "Hot Meal",
         "when": "4th Thursday: 6:00 - 8:00",
         "address": "18900 Libby Road",
-        "zip": "44137",
+        "zip": 44137,
         "call": "216-663-6868",
         "forwhom": "Open to Anyone"
       },
@@ -1642,7 +1642,7 @@
         "kind": "Pantry",
         "when": "Saturdays: 10:00 - 12:00 & 1:00 - 3:00",
         "address": "18903 South Miles Road",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-332-9673",
         "forwhom": "Bedford, Bedford Heights, Garfield Heights, Maple Heights & Warrensville Heights"
       },
@@ -1661,9 +1661,9 @@
         "kind": "Pantry",
         "when": "4th Saturday: 12:00 - 2:00",
         "address": "18950 Euclid Avenue",
-        "zip": "44117",
+        "zip": 44117,
         "call": "216-531-3040",
-        "forwhom": "44117"
+        "forwhom": 44117
       },
       "geometry": {
         "type": "Point",
@@ -1680,7 +1680,7 @@
         "kind": "Pantry",
         "when": "Thursdays: 6:00 - 7:00",
         "address": "2004 South Green Road",
-        "zip": "44121",
+        "zip": 44121,
         "call": "216-382-7202",
         "forwhom": "Beachwood, Cleveland Heights, South Euclid & University Heights"
       },
@@ -1699,7 +1699,7 @@
         "kind": "Pantry",
         "when": "Last 2 Mondays & Wednesdays: 10:00 - 2:00",
         "address": "20120 Lomond Boulevard",
-        "zip": "44122",
+        "zip": 44122,
         "call": "216-561-8358",
         "forwhom": "Primarily Shaker and East to Moreland Hills"
       },
@@ -1718,7 +1718,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 10:30 - 12:00",
         "address": "2020 East 79th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-8448",
         "forwhom": "Open to Anyone"
       },
@@ -1737,7 +1737,7 @@
         "kind": "Hot Meal",
         "when": "Last 2 Saturdays: 4:30 - 5:30",
         "address": "2031 West 30th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-281-1700",
         "forwhom": "Westside and Southside of Cleveland, Downtown, Slavic Village"
       },
@@ -1756,7 +1756,7 @@
         "kind": "Pantry",
         "when": "Last 2 Saturdays: 9:00 - 12:30",
         "address": "2031 West 30th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-281-1700",
         "forwhom": "Westside and Southside of Cleveland, Downtown, Slavic Village"
       },
@@ -1775,7 +1775,7 @@
         "kind": "Pantry",
         "when": "4th Wednesday: 5:00 - 7:00",
         "address": "20900 Miles Parkway",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-475-6327",
         "forwhom": "Open to Anyone"
       },
@@ -1794,7 +1794,7 @@
         "kind": "Pantry",
         "when": "Mondays, Wednesdays & Fridays: 10:30 - 12:30",
         "address": "2131 East 46th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-1108",
         "forwhom": "Within this area: Central Avenue, Cedar Avenue, Carnegie Avenue & Euclid Avenue"
       },
@@ -1813,15 +1813,15 @@
         "kind": "Pantry",
         "when": "Tuesdays,  Thursdays & Saturdays: 10:00 – 1:00",
         "address": "2145 Broadview Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-644-7610",
         "forwhom": "44102, 44109, 44129, 44130, 44134, 44142, and 44144"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.69901,
-          41.43771
+          -81.69925510883331,
+          41.43765536720904
         ]
       }
     },
@@ -1832,7 +1832,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 11:00 - 1:30",
         "address": "2154 SOM Center Road",
-        "zip": "44124",
+        "zip": 44124,
         "call": "440-442-4455",
         "forwhom": "Serve the Mayfield City\nSchool District, which is Gates Mills, Highland Heights, Mayfield Heights and Mayfield Village. They do not serve Lyndhurst, even though it is part of the same ZIP Code."
       },
@@ -1851,7 +1851,7 @@
         "kind": "Hot Meal",
         "when": "2nd & 3rd Fridays: 5:00 - 7:00",
         "address": "2171 East 49th Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-2632",
         "forwhom": "Open to Anyone"
       },
@@ -1870,7 +1870,7 @@
         "kind": "Hot Meal",
         "when": "1st & 3rd Saturdays: 3:00 - 5:00",
         "address": "2182 East 38th Street",
-        "zip": "44115",
+        "zip": 44115,
         "call": "216-432-2245",
         "forwhom": "Open to Anyone"
       },
@@ -1889,7 +1889,7 @@
         "kind": "Hot Meal",
         "when": "Sundays: 12:00 - 1:00",
         "address": "2230 Euclid Avenue",
-        "zip": "44115",
+        "zip": 44115,
         "call": "216-774-0425",
         "forwhom": "Open to Anyone"
       },
@@ -1908,7 +1908,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 9:00 - 12:00",
         "address": "2265 West 10th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-781-9095",
         "forwhom": "44113 and Within this area: Clark Avenue, Abbey Road, I-90 and West 5th Street"
       },
@@ -1927,7 +1927,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 5:00 - 6:00",
         "address": "23002 Lakeshore Boulevard",
-        "zip": "44123",
+        "zip": 44123,
         "call": "216-261-1688",
         "forwhom": "Open to Anyone"
       },
@@ -1946,7 +1946,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 9:00 - 12:00",
         "address": "2327 Holmden Avenue",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-741-0511",
         "forwhom": "Cuyahoga County"
       },
@@ -1965,7 +1965,7 @@
         "kind": "Pantry",
         "when": "Mondays - Fridays: 8:30 - 3:30 (By Appointment)",
         "address": "233 Tuxedo Avenue",
-        "zip": "44131",
+        "zip": 44131,
         "call": "216-739-3702",
         "forwhom": "Brooklyn Heights"
       },
@@ -1984,7 +1984,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 11:30 - 1:00; Thursdays: 11:30 - 12:30 & Saturdays: 2:30 - 3:00",
         "address": "2355 East 55th Street",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-881-8816",
         "forwhom": "Open to Anyone"
       },
@@ -2003,7 +2003,7 @@
         "kind": "Pantry",
         "when": "Wednesdays: 12:00 - 2:00 & Thursdays: 10:00 - 12:00",
         "address": "2386 Unwin Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-431-7656",
         "forwhom": "Residents of Carver Park, King Kennedy & Outhwaite Homes"
       },
@@ -2022,7 +2022,7 @@
         "kind": "Hot Meal",
         "when": "4th Thursday: 6:00 - 8:00",
         "address": "2386 Unwin Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-332-9673",
         "forwhom": "Open to Anyone"
       },
@@ -2041,7 +2041,7 @@
         "kind": "Hot Meal",
         "when": "Saturdays: 7:30 - 10:00 a.m.",
         "address": "2459 Washington Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-526-9597",
         "forwhom": "Open to Anyone"
       },
@@ -2060,7 +2060,7 @@
         "kind": "Hot Meal",
         "when": "3rd Sunday: 1:00 - 3:00",
         "address": "24600 Lakeshore Boulevard",
-        "zip": "44123",
+        "zip": 44123,
         "call": "216-731-8147",
         "forwhom": "Open to Anyone"
       },
@@ -2079,7 +2079,7 @@
         "kind": "Pantry",
         "when": "4th Thursday: 3:00 - 6:00",
         "address": "2463 North Taylor Road",
-        "zip": "44118",
+        "zip": 44118,
         "call": "216-231-9902",
         "forwhom": "Open to Anyone"
       },
@@ -2098,7 +2098,7 @@
         "kind": "Pantry",
         "when": "Tuesdays - Fridays: 10:00 - 1:00 (By Appointment); 3rd Thursday: 10:00 - 2:00 for walk ins",
         "address": "2490 Lee Boulevard",
-        "zip": "44118",
+        "zip": 44118,
         "call": "216-381-4515",
         "forwhom": "44106, 44110, 44112, 44118, 44121, 44122, 44124 & 44143"
       },
@@ -2117,7 +2117,7 @@
         "kind": "Pantry",
         "when": "Last Friday: 10:00 - 12:00",
         "address": "25415 Lake Road",
-        "zip": "44140",
+        "zip": 44140,
         "call": "440-871-3822",
         "forwhom": "Bay Village"
       },
@@ -2136,7 +2136,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 10:00 - 12:00",
         "address": "2592 West 14th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-861-7388",
         "forwhom": "44109 & 44113"
       },
@@ -2155,7 +2155,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 12:00 - 2:00",
         "address": "2607 Archwood Avenue",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-335-9115",
         "forwhom": ""
       },
@@ -2174,7 +2174,7 @@
         "kind": "Pantry",
         "when": "1st Saturday: For Emergencies & 3rd Saturday: 10:00 - 1:00",
         "address": "26219 Tungsten Road",
-        "zip": "44132",
+        "zip": 44132,
         "call": "216-338-6414",
         "forwhom": "Open to Anyone"
       },
@@ -2193,9 +2193,9 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 8:30 - 11:00",
         "address": "2632 Woodhill Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-229-5606",
-        "forwhom": "44104"
+        "forwhom": 44104
       },
       "geometry": {
         "type": "Point",
@@ -2212,9 +2212,9 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 11:00 - 1:00",
         "address": "2646 East 93rd Street",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-231-1150",
-        "forwhom": "44104"
+        "forwhom": 44104
       },
       "geometry": {
         "type": "Point",
@@ -2231,9 +2231,9 @@
         "kind": "Hot Meal",
         "when": "Saturdays: 4:30 - 5:30",
         "address": "2716 West 14th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-861-2371",
-        "forwhom": "44113"
+        "forwhom": 44113
       },
       "geometry": {
         "type": "Point",
@@ -2250,9 +2250,9 @@
         "kind": "Pantry",
         "when": "4th Saturday: 1:00 - 3:00",
         "address": "2716 West 14th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-861-2371",
-        "forwhom": "44113"
+        "forwhom": 44113
       },
       "geometry": {
         "type": "Point",
@@ -2269,7 +2269,7 @@
         "kind": "Pantry",
         "when": "4th Saturday (3rd Saturday in November & December; Closed in January): 11:00 - 1:00",
         "address": "2747 East 90th Street",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-421-5355",
         "forwhom": "Open to Anyone"
       },
@@ -2288,7 +2288,7 @@
         "kind": "Pantry",
         "when": "2nd Friday: 10:00 - 1:00 (Seniors Only)",
         "address": "2749 Woodhill Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-791-9378",
         "forwhom": "44103, 44104, 44105 & 44120"
       },
@@ -2307,7 +2307,7 @@
         "kind": "Pantry",
         "when": "2nd & 3rd Thursdays: 11:30 - 1:00",
         "address": "2856 Martin Luther King Jr.Drive",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-791-6800",
         "forwhom": "Open to Anyone"
       },
@@ -2326,7 +2326,7 @@
         "kind": "Pantry",
         "when": "Wednesdays & Saturdays: 10:00 - 1:00",
         "address": "291 East 222nd Street",
-        "zip": "44123",
+        "zip": 44123,
         "call": "216-731-3329",
         "forwhom": "Euclid"
       },
@@ -2345,7 +2345,7 @@
         "kind": "Pantry",
         "when": "Mondays, Wednesdays & Fridays: 10:00 - 1:00; 2nd Sunday: 4:00 - 6:00",
         "address": "2970 West 30th Street",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-631-6434",
         "forwhom": "Within this area: I-90, Trowbridge Avenue, Storer Avenue, West 65th Street, Railroad Tracks/Cuyahoga River"
       },
@@ -2364,7 +2364,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 1:00 - 3:00",
         "address": "3031 Monticello Boulevard",
-        "zip": "44118",
+        "zip": 44118,
         "call": "216-321-2660",
         "forwhom": "44106, 44108, 44110, 44112, 44118, 44120 and 44121"
       },
@@ -2383,7 +2383,7 @@
         "kind": "Pantry",
         "when": "Mondays, Tuesdays, Thursdays & Fridays: 1:00 - 3:00",
         "address": "3114 Scranton Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-621-3847",
         "forwhom": "44103 and 44109"
       },
@@ -2402,7 +2402,7 @@
         "kind": "Hot Meal",
         "when": "Last Sunday (or Sunday before if last is a holiday): 1:30 - 2:30",
         "address": "3115 Scranton Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-621-3847",
         "forwhom": "Open to Anyone"
       },
@@ -2421,15 +2421,15 @@
         "kind": "Hot Meal",
         "when": "Mondays - Fridays; 12:00 - 12:45; Saturdays: 9:00 - 10:00 & 4:30 - 5:30",
         "address": "3135 Lorain Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-631-4741",
         "forwhom": "Open to Anyone"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.70744,
-          41.48239
+          -81.70862138271332,
+          41.481889693789334
         ]
       }
     },
@@ -2440,9 +2440,9 @@
         "kind": "Pantry",
         "when": "1st Saturday: 9:00 - 12:00",
         "address": "3150 West 58th Street",
-        "zip": "44102",
+        "zip": 44102,
         "call": "216-281-2958",
-        "forwhom": "44102"
+        "forwhom": 44102
       },
       "geometry": {
         "type": "Point",
@@ -2459,7 +2459,7 @@
         "kind": "Pantry",
         "when": "4th Tuesday: 4:00 - 6:00",
         "address": "32001 Cannon Road",
-        "zip": "44139",
+        "zip": 44139,
         "call": "440-349-6363",
         "forwhom": ""
       },
@@ -2478,7 +2478,7 @@
         "kind": "Pantry",
         "when": "2nd  4th & 5th Wednesdays: 11:00 – 1:00",
         "address": "3241 East 130th Street",
-        "zip": "44120",
+        "zip": 44120,
         "call": "216-752-4803",
         "forwhom": "Open to Anyone"
       },
@@ -2497,7 +2497,7 @@
         "kind": "Hot Meal",
         "when": "1st  2nd 3rd & 4th Fridays: 5:00 - 6:00",
         "address": "3250 East 93rd Street",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-441-4224",
         "forwhom": "Open to Anyone"
       },
@@ -2516,7 +2516,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Tuesdays: 10:00 - 12:00",
         "address": "3250 East 93rd Street",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-441-4224",
         "forwhom": "Open to Anyone"
       },
@@ -2535,7 +2535,7 @@
         "kind": "Pantry",
         "when": "Last Wednesday: 4:00 - 6:00",
         "address": "3256 Scranton Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-398-6308",
         "forwhom": "Open to Anyone"
       },
@@ -2554,15 +2554,15 @@
         "kind": "Pantry",
         "when": "Mondays, Wednesdays & Fridays: 9:00 - 12:00 & 1:00 - 3:00",
         "address": "3339 Broadview Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-459-9839",
         "forwhom": "44102, 44109, 44111, 44113, 44114, 44115, 44127, 44134 and 44144"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.70217,
-          41.44001
+          -81.70365929603577,
+          41.44057094503651
         ]
       }
     },
@@ -2573,7 +2573,7 @@
         "kind": "Hot Meal",
         "when": "3rd Saturday: 12:00 - 1:00",
         "address": "3445 Warrensville CenteR Road",
-        "zip": "44122",
+        "zip": 44122,
         "call": "216-991-3432",
         "forwhom": "Open to Anyone"
       },
@@ -2592,7 +2592,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Tuesdays: 9:30 - 11:30 (Closed in August)",
         "address": "3474 East 147th Street",
-        "zip": "44122",
+        "zip": 44122,
         "call": "216-921-1912",
         "forwhom": "Open to Anyone"
       },
@@ -2611,7 +2611,7 @@
         "kind": "Hot Meal",
         "when": "2nd & 4th Saturdays: 3:00 - 6:00",
         "address": "3476 East 152nd Street",
-        "zip": "44120",
+        "zip": 44120,
         "call": "216-295-1530",
         "forwhom": "Mount Pleasant"
       },
@@ -2630,7 +2630,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 11:30 - 1:00 & Saturdays: 10:00 - 11:30",
         "address": "3484 Martin Luther King Jr Drive",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-441-2770",
         "forwhom": "Open to Anyone"
       },
@@ -2649,7 +2649,7 @@
         "kind": "Hot Meal",
         "when": "Mondays, Wednesdays & Last Friday: Meal Served at Noon",
         "address": "3510 Broadview Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-749-7778",
         "forwhom": "Open to Anyone"
       },
@@ -2668,7 +2668,7 @@
         "kind": "Pantry",
         "when": "1st & 3rd Sundays: 11:00 - 1:00",
         "address": "3550 Crocker Road",
-        "zip": "44145",
+        "zip": 44145,
         "call": "440-808-0200",
         "forwhom": "Westlake and Surrounding Communities"
       },
@@ -2687,7 +2687,7 @@
         "kind": "Hot Meal",
         "when": "Sundays: 7:00 - 8:00 AM",
         "address": "356 Eddy Road",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-956-5206",
         "forwhom": "Open to Anyone"
       },
@@ -2706,7 +2706,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays  Wednesdays & Thursdays: 4:30 – 6:30",
         "address": "3610 Bridge Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-281-5854",
         "forwhom": "Open to Anyone"
       },
@@ -2725,7 +2725,7 @@
         "kind": "Pantry",
         "when": "Mondays  Wednesdays & Fridays: 10:00 – 2:00",
         "address": "3610 Bridge Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-281-5854",
         "forwhom": "44102 & 44113"
       },
@@ -2744,7 +2744,7 @@
         "kind": "Pantry",
         "when": "Mondays: 4:00 - 6:00; Tuesdays & Fridays: 9:00 -11:30; Thursdays: 9:00 - 2:30 plus last 2 Thursdays: 5:30 - 7:30",
         "address": "3663 Mayfield Road",
-        "zip": "44121",
+        "zip": 44121,
         "call": "216-381-0707",
         "forwhom": "Cleveland Heights, Lyndhurst, South Euclid & University Heights"
       },
@@ -2763,7 +2763,7 @@
         "kind": "Hot Meal",
         "when": "Last Tuesday: 5:30 - 6:30",
         "address": "367 East 260th Street",
-        "zip": "44132",
+        "zip": 44132,
         "call": "216-731-1515",
         "forwhom": "Open to Anyone"
       },
@@ -2782,7 +2782,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 10:00 - 1:00",
         "address": "3782 Community CollegeAvenue",
-        "zip": "44115",
+        "zip": 44115,
         "call": "216-432-9749",
         "forwhom": "Within this area: East 22nd Street, Central Avenue, East 40th Street & Woodland Avenue "
       },
@@ -2801,7 +2801,7 @@
         "kind": "Pantry",
         "when": "Mondays - Fridays: 10:00 - 2:00",
         "address": "3802 Pearl Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-749-4295",
         "forwhom": "44102, 44109, 44129, 44130, 44144 & Within this area: South to Tiedeman Road, North to Storer Avenue, West 72nd Street & East 2nd Street"
       },
@@ -2820,7 +2820,7 @@
         "kind": "Hot Meal",
         "when": "Last Wednesday: 5:30 - 6:30",
         "address": "3940 Martin Luther King Jr Boulevard",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-341-1132",
         "forwhom": "Open to Anyone"
       },
@@ -2839,7 +2839,7 @@
         "kind": "Pantry",
         "when": "1st / 3rd Fridays: 5:00 - 8:00 & 1st / 3rd Saturdays: 9:00 - 12:00",
         "address": "3949 Lee Road",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-276-0571",
         "forwhom": "Within this area: East 151st Street, East 189th Street, Harvard Avenue & Stockbridge Avenue"
       },
@@ -2858,7 +2858,7 @@
         "kind": "Pantry",
         "when": "4th Wednesday: 9:00 - 1:00 (Open the 3rd Wednesday in November & December)",
         "address": "4115 Bridge Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-631-5800",
         "forwhom": "Near Westside of Cleveland"
       },
@@ -2877,7 +2877,7 @@
         "kind": "Pantry",
         "when": "Fridays: 9:30 - 12:00",
         "address": "4118 Brookside Boulevard",
-        "zip": "44135",
+        "zip": 44135,
         "call": "216-941-6767",
         "forwhom": ""
       },
@@ -2896,7 +2896,7 @@
         "kind": "Pantry",
         "when": "1st & 3rd Saturdays: 10:00 - 12:00",
         "address": "4130 East 131st Street",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-704-8602",
         "forwhom": "Open to Anyone"
       },
@@ -2915,7 +2915,7 @@
         "kind": "Hot Meal",
         "when": "Last 5 Business Days of the Month: 12:00 - 1:00",
         "address": "4139 East 93rd Street",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-341-1640",
         "forwhom": "44105, 44120, 44122, 44125, 44127, 44128, 44137 and 44139"
       },
@@ -2934,7 +2934,7 @@
         "kind": "Pantry",
         "when": "Mondays - Thursdays: 9:00 - 11:30",
         "address": "4139 East 93rd Street",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-861-8185",
         "forwhom": "44105, 44120, 44122,44125, 44127, 44128, 44137 and Bedford"
       },
@@ -2953,7 +2953,7 @@
         "kind": "Pantry",
         "when": "Tuesdays, Thursdays & Last Saturday: 9:30 - 11:45",
         "address": "415 Northfield Road",
-        "zip": "44146",
+        "zip": 44146,
         "call": "440-232-5115",
         "forwhom": "Bedford, Bedford Heights, Garfield Heights, Solon, Walton Hills and Warrensville Heights"
       },
@@ -2972,7 +2972,7 @@
         "kind": "Hot Meal",
         "when": "1st 2 Thursdays: 6:00 - 7:00 & Last 2 Sundays: 5:00 - 6:00",
         "address": "4200 Pearl Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-661-5642",
         "forwhom": "Open to Anyone"
       },
@@ -2991,7 +2991,7 @@
         "kind": "Pantry",
         "when": "Wednesdays: 7:30 - 8:30 PM & Saturdays: 12:00 1:30",
         "address": "4265 Northfield Road",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-292-3131",
         "forwhom": "44122, 44128, 44137 (only Libby Road, Northfield Road and Warrensville Center Road) and 44146"
       },
@@ -3010,7 +3010,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 4:30 - 6:00",
         "address": "4341 East 131st Street",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-581-0981",
         "forwhom": "Open to Anyone"
       },
@@ -3029,7 +3029,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 1:00 - 2:00",
         "address": "4345 State Road",
-        "zip": "44109",
+        "zip": 44109,
         "call": "440-473-3885",
         "forwhom": ""
       },
@@ -3048,7 +3048,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 9:30 - 12:00",
         "address": "4370 West 140th Street",
-        "zip": "44135",
+        "zip": 44135,
         "call": "216-671-3870",
         "forwhom": "44111, 44135 & East of West 117th Street"
       },
@@ -3067,7 +3067,7 @@
         "kind": "Pantry",
         "when": "Mondays - Thursdays: 9:00 - 11:30",
         "address": "4400 Clark Avenue",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-631-1515",
         "forwhom": "44102, 44109, 44113 and 44144"
       },
@@ -3086,7 +3086,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 12:00 - 1:00",
         "address": "4402 Clark Avenue",
-        "zip": "44109",
+        "zip": 44109,
         "call": "216-631-1515",
         "forwhom": "Open to Anyone"
       },
@@ -3105,7 +3105,7 @@
         "kind": "Hot Meal",
         "when": "Daily: Breakfast: 6:00 - 6:30; Lunch: 11:30 - 12:30 D& Dinner: 5:30 - 6:30",
         "address": "4410 Franklin Boulevard",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-631-9860",
         "forwhom": "Open to Anyone"
       },
@@ -3124,7 +3124,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 11:00 - 2:30",
         "address": "4411 East 175th Street",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-283-4365",
         "forwhom": "Open to Anyone"
       },
@@ -3143,7 +3143,7 @@
         "kind": "Pantry",
         "when": "Tuesdays - Fridays: 10:00 - 11:00",
         "address": "4427 Franklin Boulevard",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-651-6250",
         "forwhom": "44102 and 44113"
       },
@@ -3162,7 +3162,7 @@
         "kind": "Pantry",
         "when": "Mondays - Fridays: By Delivery Appointment",
         "address": "4427 Rocky River Drive",
-        "zip": "44135",
+        "zip": 44135,
         "call": "216-251-1200",
         "forwhom": ""
       },
@@ -3181,7 +3181,7 @@
         "kind": "Hot Meal",
         "when": "Last 2 Thursdays: 5:00 - 6:30; Sundays: 12:30 - 2:00",
         "address": "4515 Superior Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-431-3726",
         "forwhom": "Open to Anyone"
       },
@@ -3200,7 +3200,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 6:00 - 7:00",
         "address": "4800 Broadway Avenue",
-        "zip": "44127",
+        "zip": 44127,
         "call": "216-641-8948",
         "forwhom": "44105,  44125 and 44127"
       },
@@ -3219,7 +3219,7 @@
         "kind": "Pantry",
         "when": "Tuesdays - Fridays: 11:30 - 2:00 & Tuesdays: 6:00 - 7:00",
         "address": "4800 Broadway Avenue",
-        "zip": "44128",
+        "zip": 44128,
         "call": "216-641-8948",
         "forwhom": "44105,  44125 and 44127"
       },
@@ -3238,15 +3238,15 @@
         "kind": "Pantry",
         "when": "3rd Tuesday: 8:30 - 11:00",
         "address": "4940 Broadview Road",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-661-1008",
         "forwhom": "Church Parish Territory"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.6956,
-          41.42041
+          -81.69710397720337,
+          41.42189289345083
         ]
       }
     },
@@ -3257,7 +3257,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 5:00 - 6:00",
         "address": "5045 Warrensville CenterRoad",
-        "zip": "44137",
+        "zip": 44137,
         "call": "216-663-5683",
         "forwhom": "Open to Anyone"
       },
@@ -3276,7 +3276,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 2:00 - 4:00 & Fridays: 10:00 - 12:00",
         "address": "5280 Broadview Road",
-        "zip": "44134",
+        "zip": 44134,
         "call": "216-351-6376",
         "forwhom": "Brooklyn Heights, Parma, Parma Heights and Seven Hills"
       },
@@ -3295,7 +3295,7 @@
         "kind": "Pantry",
         "when": "2nd Wednesday: 11:00 - 1:00",
         "address": "5322 Fleet Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-812-8560",
         "forwhom": ""
       },
@@ -3314,7 +3314,7 @@
         "kind": "Pantry",
         "when": "3rd Wednesday: 1:00 - 2:00 & 3rd Thursday: 6:00 - 7:00",
         "address": "5407 Turney Road",
-        "zip": "44125",
+        "zip": 44125,
         "call": "216-475-3244",
         "forwhom": "Garfield Heights"
       },
@@ -3333,7 +3333,7 @@
         "kind": "Hot Meal",
         "when": "Last Saturday: 12:00 - 1:30",
         "address": "5500 Scovil Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-881-7337",
         "forwhom": ""
       },
@@ -3352,7 +3352,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 4:00 - 5:30",
         "address": "5500 West 54th Street",
-        "zip": "44129",
+        "zip": 44129,
         "call": "No Site Number Available",
         "forwhom": "Open to Anyone"
       },
@@ -3371,7 +3371,7 @@
         "kind": "Hot Meal",
         "when": "2nd/4th Mondays & 2nd/4th Tuesdays: 3:00 - 4:00",
         "address": "5706 Woodland Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-426-8543",
         "forwhom": "Open to Anyone"
       },
@@ -3390,7 +3390,7 @@
         "kind": "Hot Meal",
         "when": "Last 2 Wednesdays: 4:00 - 6:00",
         "address": "5805 Lexington Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-269-3870",
         "forwhom": "Open to Anyone"
       },
@@ -3409,7 +3409,7 @@
         "kind": "Pantry",
         "when": "Fridays: 8:30 - 11:30",
         "address": "6001 Woodland Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-391-7231",
         "forwhom": "Open to Anyone"
       },
@@ -3428,7 +3428,7 @@
         "kind": "Pantry",
         "when": "Second to Last Wednesday of the Month: 11:30 - 1:30",
         "address": "6019 Lausche Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-361-1444",
         "forwhom": "Within this area: East 55th Street, East 72nd Street, Lakeside Avenue and Superior Avenue"
       },
@@ -3447,7 +3447,7 @@
         "kind": "Hot Meal",
         "when": "3rd Tuesday & 3rd Wednesday: 4:00 - 5:00 (closed in January and July)",
         "address": "616 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-761-2279",
         "forwhom": "Open to Anyone"
       },
@@ -3466,7 +3466,7 @@
         "kind": "Pantry",
         "when": "Mondays: 9:00 - 12:00; Wednesdays: 1:00 - 4:00 & Thursdays: 5:00 - 7:00",
         "address": "6285 Pearl Road",
-        "zip": "44130",
+        "zip": 44130,
         "call": "440-842-6491",
         "forwhom": "Parma Heights residents and those who worship in Parma Heights"
       },
@@ -3485,7 +3485,7 @@
         "kind": "Hot Meal",
         "when": "Last Saturday: 12:00 - 1:00",
         "address": "6403 Linwood Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-881-3008",
         "forwhom": "Open to Anyone"
       },
@@ -3504,9 +3504,9 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 11:00 - 1:00",
         "address": "6424 St. Clair Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-695-8593",
-        "forwhom": "44103"
+        "forwhom": 44103
       },
       "geometry": {
         "type": "Point",
@@ -3523,7 +3523,7 @@
         "kind": "Pantry",
         "when": "Last Tuesday & Wednesday: 1:00 - 3:00",
         "address": "6600 Lexington Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-0505",
         "forwhom": "44103,  44104 & 44106"
       },
@@ -3542,7 +3542,7 @@
         "kind": "Hot Meal",
         "when": "Last Sunday: 4:00 - 5:00",
         "address": "6667 Wallings Road",
-        "zip": "44133",
+        "zip": 44133,
         "call": "440-237-6760",
         "forwhom": ""
       },
@@ -3561,7 +3561,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 12:00 - 2:00",
         "address": "6735 York Road",
-        "zip": "44130",
+        "zip": 44130,
         "call": "440-884-8463",
         "forwhom": "Open to Anyone"
       },
@@ -3580,7 +3580,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 5:30 - 6:30",
         "address": "6800 Lexington Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-0505",
         "forwhom": "Open to Anyone"
       },
@@ -3599,7 +3599,7 @@
         "kind": "Hot Meal",
         "when": "Last Wednesday: 4:30 - 7:00",
         "address": "6818 Denison Avenue",
-        "zip": "44102",
+        "zip": 44102,
         "call": "216-631-9636",
         "forwhom": "Open to Anyone"
       },
@@ -3618,7 +3618,7 @@
         "kind": "Pantry",
         "when": "Tuesdays: 10:00 - 12:00 & Thursdays: 5:00 - 7:00",
         "address": "6877 Middlebrook Boulevard",
-        "zip": "44130",
+        "zip": 44130,
         "call": "216-362-0044",
         "forwhom": "Middleburg Heights residents or members of Middleburg Heights Churches"
       },
@@ -3637,7 +3637,7 @@
         "kind": "Pantry",
         "when": "3rd Wednesday: 9:00 - 1:00",
         "address": "7000 Ridge Road",
-        "zip": "44129",
+        "zip": 44129,
         "call": "440-842-1614",
         "forwhom": "Parma, North Royalton & Seven Hills"
       },
@@ -3656,7 +3656,7 @@
         "kind": "Pantry",
         "when": "3rd Tuesday: 10:30 - 1:00",
         "address": "7025 Cedar Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-431-4130",
         "forwhom": ""
       },
@@ -3675,7 +3675,7 @@
         "kind": "Pantry",
         "when": "Memorial Day - Labor Day: Mondays: 6:00 - 7:30; Tuesdays & Thursdays: 11:30 - 1:00; After Labor Day: Tuesdays, Thursdays & Saturdays: 11:30 -1:00",
         "address": "7100 Kinsman Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-641-5558",
         "forwhom": "44104,  44105 & 44120"
       },
@@ -3694,7 +3694,7 @@
         "kind": "Hot Meal",
         "when": "4th Wednesday: 12:00 - 1:30",
         "address": "7101 Carnegie Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-0064",
         "forwhom": "Open to Anyone"
       },
@@ -3713,7 +3713,7 @@
         "kind": "Pantry",
         "when": "Last Thursday & Last Friday: 9:30 - 1:30",
         "address": "7101 Carnegie Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-0064",
         "forwhom": "44102 & 44109"
       },
@@ -3732,7 +3732,7 @@
         "kind": "Hot Meal",
         "when": "2nd Monday, 2nd Wednesday & 2nd Friday: 4:30-6:30; and 2nd Tuesday & 2nd Thursday: 3:00-5:00",
         "address": "711 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-451-7816",
         "forwhom": ""
       },
@@ -3751,7 +3751,7 @@
         "kind": "Pantry",
         "when": "By Appointment",
         "address": "7367 York Road",
-        "zip": "44130",
+        "zip": 44130,
         "call": "440-842-5533",
         "forwhom": "Parma Heights & Southwest part of Parma"
       },
@@ -3770,7 +3770,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 11:00 - 1:00",
         "address": "745 East 105th Street",
-        "zip": "44108",
+        "zip": 44108,
         "call": "216-541-6203",
         "forwhom": "Northeast Ohio"
       },
@@ -3789,7 +3789,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Fridays: 11:00 - 12:30 (3rd Friday in November & December)",
         "address": "7510 Woodland Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-431-1361",
         "forwhom": "Cuyahoga County"
       },
@@ -3808,7 +3808,7 @@
         "kind": "Pantry",
         "when": "2nd and 4th Saturdays: 10:00 - 12:00",
         "address": "7541 Kinsman Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-341-0385",
         "forwhom": "Open to Anyone"
       },
@@ -3827,7 +3827,7 @@
         "kind": "Pantry",
         "when": "4th Tuesdays & Thursdays: 4:30 - 6:00",
         "address": "7710 Euclid Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-2167",
         "forwhom": ""
       },
@@ -3846,7 +3846,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 11:00 - 12:45",
         "address": "7901 Quincy Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-432-2212",
         "forwhom": "Open to Anyone"
       },
@@ -3865,7 +3865,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 11:30 - 12:30",
         "address": "799 East 82nd Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-4415",
         "forwhom": "Open to Anyone"
       },
@@ -3884,7 +3884,7 @@
         "kind": "Pantry",
         "when": "Last Friday: 9:00 - 12:00 & Emergencies",
         "address": "799 East 82nd Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-4415",
         "forwhom": "44103,  44106 and 44108"
       },
@@ -3903,9 +3903,9 @@
         "kind": "Hot Meal",
         "when": "Sundays: 11:30 - 12:30",
         "address": "799 East 82nd Street",
-        "zip": "44103",
+        "zip": 44103,
         "call": "440-256-1412",
-        "forwhom": "44103"
+        "forwhom": 44103
       },
       "geometry": {
         "type": "Point",
@@ -3922,7 +3922,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 2:00 - 4:00",
         "address": "8021 Cedar Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-432-2598",
         "forwhom": "44103,  44104 & 44106"
       },
@@ -3941,7 +3941,7 @@
         "kind": "Hot Meal",
         "when": "Wednesdays: 4:00 - 6:00",
         "address": "8108 Pulaski Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-391-3410",
         "forwhom": "Open to Anyone"
       },
@@ -3960,7 +3960,7 @@
         "kind": "Hot Meal",
         "when": "Mondays, Tuesdays, Thursdays & Fridays: 12:30-1:30",
         "address": "813 East 152nd Street",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-761-5229",
         "forwhom": "Open to Anyone"
       },
@@ -3979,7 +3979,7 @@
         "kind": "Pantry",
         "when": "Last Thursday: 1:00 - 3:00",
         "address": "813 East 152nd Street",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-761-5229",
         "forwhom": "Collinwood"
       },
@@ -3998,7 +3998,7 @@
         "kind": "Pantry",
         "when": "Last Saturday: 10:00 - 11:30",
         "address": "8201 Superior Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-795-0910",
         "forwhom": "44103,  44106 & 44108"
       },
@@ -4017,7 +4017,7 @@
         "kind": "Pantry",
         "when": "Last Friday: 9:00 - 11:00",
         "address": "8215 Woodland Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-721-0177",
         "forwhom": "Fairfax"
       },
@@ -4036,7 +4036,7 @@
         "kind": "Hot Meal",
         "when": "Last Full Week: Monday - Friday: 4:00 - 6:00",
         "address": "822 East 150th Street",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-761-0486",
         "forwhom": "Open to Anyone"
       },
@@ -4055,9 +4055,9 @@
         "kind": "Pantry",
         "when": "2nd Tuesday: 7:30 - 11:30",
         "address": "822 East 150th Street",
-        "zip": "44110",
+        "zip": 44110,
         "call": "216-321-0022",
-        "forwhom": "44110"
+        "forwhom": 44110
       },
       "geometry": {
         "type": "Point",
@@ -4074,7 +4074,7 @@
         "kind": "Pantry",
         "when": "Saturdays: 9:30 - 1:30",
         "address": "8328 Broadway Avenue",
-        "zip": "44105",
+        "zip": 44105,
         "call": "216-441-6373",
         "forwhom": "44105, 44125, 44127"
       },
@@ -4093,7 +4093,7 @@
         "kind": "Pantry",
         "when": "3rd Friday: 12:00 - 2:30",
         "address": "8401 Cedar Avenue",
-        "zip": "44103",
+        "zip": 44103,
         "call": "216-231-3562",
         "forwhom": "Fairfax"
       },
@@ -4112,7 +4112,7 @@
         "kind": "Pantry",
         "when": "Last Wednesday: 9:00 - 12:00",
         "address": "8519 Clark Avenue",
-        "zip": "44102",
+        "zip": 44102,
         "call": "216-281-9776",
         "forwhom": "Open to Anyone"
       },
@@ -4131,7 +4131,7 @@
         "kind": "Pantry",
         "when": "Mondays, Wednesdays & Fridays: 12:00 - 3:00; 4th Week: 10:00 - 12:00 & 1:00 - 3:00",
         "address": "8520 Carnegie Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-229-2200",
         "forwhom": "Within this area: North of Woodland, East of East 71st Street, South of Wade Park Avenue between East 105th Street and East 125th Street, and South of Chester Avenue. They also serve Little Italy."
       },
@@ -4150,7 +4150,7 @@
         "kind": "Hot Meal",
         "when": "1st & 3rd Sundays: 5:00 - 6:00",
         "address": "8526 Usher Road",
-        "zip": "44138",
+        "zip": 44138,
         "call": "440-235-4558",
         "forwhom": "Open to Anyone"
       },
@@ -4169,7 +4169,7 @@
         "kind": "Hot Meal",
         "when": "2nd, 3rd,  4th and 5th Saturdays: 12:00 – 1:00",
         "address": "8601 Wade Park Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-231-7622",
         "forwhom": "Open to Anyone"
       },
@@ -4188,7 +4188,7 @@
         "kind": "Hot Meal",
         "when": "Mondays: 4:00; Tuesdays & Thursdays: 11:00",
         "address": "8869 Cedar Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-421-1516",
         "forwhom": "Open to Anyone"
       },
@@ -4207,7 +4207,7 @@
         "kind": "Hot Meal",
         "when": "Last 5 Business Days of the Month: 12:00 - 1:00",
         "address": "9000 Superior Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-229-6065",
         "forwhom": "Open to Anyone"
       },
@@ -4226,7 +4226,7 @@
         "kind": "Pantry",
         "when": "Mondays - Thursdays: 9:00 - 11:30",
         "address": "9000 Superior Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-229-6065",
         "forwhom": "44103, 44104, 44106, 44108, 44114 & 44115"
       },
@@ -4245,7 +4245,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Wednesdays: 5:00 - 7:00",
         "address": "913 College Avenue",
-        "zip": "44113",
+        "zip": 44113,
         "call": "216-241-3418",
         "forwhom": "Tremont"
       },
@@ -4264,7 +4264,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 8:00 - 11:00; Wednesdays: 5:30 -6:30 (except before the 3rd Saturday) & Sundays: 11:15 - 12:30",
         "address": "9403 Garfield Boulevard",
-        "zip": "44125",
+        "zip": 44125,
         "call": "216-429-2636",
         "forwhom": "44105, 44125, 44128,44131 and 44137"
       },
@@ -4283,7 +4283,7 @@
         "kind": "Pantry",
         "when": "Tuesdays & Thursdays: 9:30 - 11:00",
         "address": "9412 Heath Avenue",
-        "zip": "44104",
+        "zip": 44104,
         "call": "No Site Number Available",
         "forwhom": "Within this area: Harvard Avenue, Martin Luther King, East 71st Street and East 79th Street"
       },
@@ -4302,7 +4302,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 9:30 - 11:30",
         "address": "9510 Buckeye Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-231-8889",
         "forwhom": "Open to Anyone"
       },
@@ -4321,7 +4321,7 @@
         "kind": "Pantry",
         "when": "3rd Saturday: 8:00 - 10:00",
         "address": "9543 Broadview Road",
-        "zip": "44147",
+        "zip": 44147,
         "call": "440-526-0514",
         "forwhom": "Broadview Heights, Independence and Seven Hills"
       },
@@ -4340,7 +4340,7 @@
         "kind": "Pantry",
         "when": "4th Saturday: 11:00 - 1:00",
         "address": "9700 Kinsman Road",
-        "zip": "44104",
+        "zip": 44104,
         "call": "216-341-3221",
         "forwhom": "Open to Anyone"
       },
@@ -4359,7 +4359,7 @@
         "kind": "Pantry",
         "when": "4th Saturday: 11:00 - 1:00",
         "address": "977 Caledonia Avenue",
-        "zip": "44112",
+        "zip": 44112,
         "call": "216-458-1808",
         "forwhom": "Open to Anyone"
       },
@@ -4378,7 +4378,7 @@
         "kind": "Pantry",
         "when": "2nd & 4th Saturdays: 9:00 - 1:00",
         "address": "98 Center Road",
-        "zip": "44116",
+        "zip": 44116,
         "call": "440-735-3473",
         "forwhom": "Open to Anyone"
       },
@@ -4397,7 +4397,7 @@
         "kind": "Pantry",
         "when": "4th Tuesday: 10:00 - 11:30",
         "address": "9900 Denison Avenue",
-        "zip": "44102",
+        "zip": 44102,
         "call": "216-631-0904",
         "forwhom": "44102 & 44111"
       },
@@ -4416,7 +4416,7 @@
         "kind": "Pantry",
         "when": "Saturday after the 3rd Sunday (Except Thanksgiving & Christmas): 10:30 - 11:30",
         "address": "9990 Euclid Avenue",
-        "zip": "44106",
+        "zip": 44106,
         "call": "216-231-0408",
         "forwhom": "Open to Anyone"
       },
@@ -4435,7 +4435,7 @@
         "kind": "Hot Meal",
         "when": "Tuesdays: 7:00 - 8:00",
         "address": "1700 Payne Avenue",
-        "zip": "44114",
+        "zip": 44114,
         "call": "440-777-3333",
         "forwhom": "Open to Anyone"
       },
