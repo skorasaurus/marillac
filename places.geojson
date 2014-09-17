@@ -4446,6 +4446,443 @@
           41.50465
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Jesus Christ Mount Moriah",
+        "kind": "Pantry",
+        "when": "3rd Saturday: 11:00 - 1:00 ",
+        "address": "9807 Cudell Avenue",
+        "zip": "44102",
+        "call": "216-315-4245",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.75171,
+          41.47377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Proyecto Luz",
+        "kind": "Pantry",
+        "when": "Mondays - Fridays: By Appointment",
+        "address": "8901 Willard Avenue",
+        "zip": "44102",
+        "call": "216-651-8236",
+        "forwhom": "Westside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74568,
+          41.47088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westside Seventh Day Adventist Church",
+        "kind": "Hot Meal ",
+        "when": "3rd Sunday: 1:00",
+        "address": "8809 Madison Avenue",
+        "zip": "44102",
+        "call": "216-235-0664",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74503,
+          41.47686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calvary Reformed Church",
+        "kind": "Hot Meal ",
+        "when": "Thursdays: 12:00 - 2:00 and 3rd Friday: 5:30 - 7:00",
+        "address": "1918 West 65th Street",
+        "zip": "44102",
+        "call": "216-961-4271",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73033,
+          41.47934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calvary Reformed Church",
+        "kind": "Pantry",
+        "when": "2nd & 4th Fridays: 12:00 - 4:00 ",
+        "address": "1918 West 65th Street",
+        "zip": "44102",
+        "call": "216-961-4271",
+        "forwhom": "Within this area: West 44th Street to Lake Avenue and Denison Avenue to West Boulevard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73033,
+          41.47934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ebenezer Seventh Day Adventist Church",
+        "kind": "Pantry",
+        "when": "4th Thursday: 6:00 - 8:00 (the week before if the 4th is a holiday)",
+        "address": "7322 Elton Avenue",
+        "zip": "44102",
+        "call": "216-939-8661",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73502,
+          41.47512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Episcopal West Side Shared Ministry",
+        "kind": "Hot Meal ",
+        "when": "Wednesdays: 6:00 - 7:00 & Sundays: 12:30",
+        "address": "1349 West 78th Street",
+        "zip": "44102",
+        "call": "216-631-2841",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73823,
+          41.48358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iglesia Cristiana Pentecostal",
+        "kind": "Hot Meal",
+        "when": "2nd & Last Saturdays: 4:00 - 6:00 ",
+        "address": "2017 West 85th Street",
+        "zip": "44102",
+        "call": "216-246-0653",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74279,
+          41.47571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Project SEVA - St. Colman's",
+        "kind": "Hot Meal ",
+        "when": "2nd to Last Saturday: 3:00 - 5:00",
+        "address": "2021 West 65th Street",
+        "zip": "44102",
+        "call": "216-651-0550",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.7301,
+          41.47601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sagrada Familia Church",
+        "kind": "Pantry",
+        "when": "3rd Thursday: 9:00 - 11:00",
+        "address": "7719 Detroit Avenue",
+        "zip": "44102",
+        "call": "216-631-2888",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.73805,
+          41.48152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WSEM Food Center at Community Corner Hunger Center ",
+        "kind": "Pantry",
+        "when": "Mondays - Fridays: 10:00 - 2:00",
+        "address": "8302 Detroit Avenue",
+        "zip": "44102",
+        "call": "216-631-6508",
+        "forwhom": "Within this area: Lake Erie, West 52nd Street, West 117th Street and Clark Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74165,
+          41.48117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prince of Peace Outreach and Deliverance Ministries",
+        "kind": "Pantry",
+        "when": "Mondays, Wednesdays & Fridays: 1:00 - 4:00 ",
+        "address": "4800 Denison Avenue",
+        "zip": "44102",
+        "call": "216-651-6698",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.72193,
+          41.45479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Boniface Church ",
+        "kind": "Hot Meal ",
+        "when": "1st Friday: 4:00 - 6:00",
+        "address": "3545 West 54th Street",
+        "zip": "44102",
+        "call": "216-961-2713",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.72501,
+          41.4577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Boniface Church ",
+        "kind": "Pantry",
+        "when": "2nd, 3rd & 4th Thursdays: 9:30 - 12:30",
+        "address": "3545 West 54th Street",
+        "zip": "44102",
+        "call": "216-961-2713",
+        "forwhom": "44102 and Within this area: Denison Avenue/Ridge Road, West 46th Street and the South Side of Clark Avenue "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.72501,
+          41.4577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church of Jesus Christ Mount Moriah",
+        "kind": "Pantry",
+        "when": "3rd Saturday: 11:00 - 1:00 ",
+        "address": "9807 Cudell Avenue",
+        "zip": "44102",
+        "call": "216-315-4245",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.75171,
+          41.47377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Proyecto Luz",
+        "kind": "Pantry",
+        "when": "Mondays - Fridays: By Appointment",
+        "address": "8901 Willard Avenue",
+        "zip": "44102",
+        "call": "216-651-8236",
+        "forwhom": "Westside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74568,
+          41.47088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clague Road United Church of Christ",
+        "kind": "Hot Meal ",
+        "when": "Last Saturday: 5:00 - 6:00",
+        "address": "3650 Clague Road",
+        "zip": "44070",
+        "call": "440-734-1040",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.88153,
+          41.43531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "John Knox Presbyterian Church",
+        "kind": "Hot Meal",
+        "when": "Last Tuesday: 5:30 - 7:00",
+        "address": "25200 Lorain Road",
+        "zip": "44070",
+        "call": "440-777-3744",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.90254,
+          41.42335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Olmsted Food Pantry",
+        "kind": "Pantry",
+        "when": "Wednesdays: 1:00 - 4:00 & By Appointment",
+        "address": "26272 Butternut Ridge Road",
+        "zip": "44070",
+        "call": "440-716-4165",
+        "forwhom": "North Olmsted"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.91327,
+          41.40948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Westside Seventh Day Adventist Church",
+        "kind": "Hot Meal ",
+        "when": "3rd Sunday: 1:00",
+        "address": "8809 Madison Avenue",
+        "zip": "44102",
+        "call": "216-235-0664",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.74503,
+          41.47686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Church Street Ministries",
+        "kind": "Pantry",
+        "when": "Mondays - Saturdays By Appointment ",
+        "address": "398 West Bagley Road",
+        "zip": "44017",
+        "call": "440-826-4603",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.87005,
+          41.37223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "People's Community Church",
+        "kind": "Pantry",
+        "when": "3rd Saturday: 10:00 - 12:00",
+        "address": "628 Wesley Drive",
+        "zip": "44017",
+        "call": "440-234-0609",
+        "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.85862,
+          41.38332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SCAN Hunger Center",
+        "kind": "Pantry",
+        "when": "2nd Friday: 10:00 - 3:00 & 4th Friday: 4:00 - 7:00 (Different in November & December)",
+        "address": "85 South Rocky River Drive",
+        "zip": "44017",
+        "call": "440-260-7226",
+        "forwhom": "Berea, Brook Park, Columbia Township, Middleburg Heights, Olmsted Falls and Strongsville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.85354,
+          41.36407
+        ]
+      }
     }
   ]
 }
