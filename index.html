@@ -139,9 +139,9 @@ featLayer.on('ready', function() {
     });   
 
 
-/** CONFIGURE **/
+/** CONFIGURE smartystreets **/
 
-    var htmlKey = "3548360835023561920";      // Put your HTML key here
+    var htmlKey = "3548360835824135311";      // Put your HTML key here
     var debug = true;          // Toggle debug mode
 
     var testRunnerVersion = "1.1.6";  // The version of this test runner page
@@ -157,7 +157,7 @@ featLayer.on('ready', function() {
     });
 
 
-    /** INITIALIZE **/
+    /** INITIALIZE liveaddress **/
 
     var liveaddress = $.LiveAddress({
       key: htmlKey,   // An HTML key from your account
@@ -167,11 +167,12 @@ featLayer.on('ready', function() {
     });
 
     // https://github.com/smartystreets/jquery.liveaddress/blob/master/customizations/get-coordinates.js
-    //grab coordinates and then pan to the coords, 
+    //grab coordinates and then pan to the coords,     
     liveaddress.on("AddressAccepted", function(event, data, previousHandler)
     {
     if (data.response.chosen)
     console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
+  // create marker based on the returned coords, add it to map
     L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
       icon: L.mapbox.marker.icon({
           'marker-size': 'medium',
@@ -179,6 +180,7 @@ featLayer.on('ready', function() {
           'marker-color': '#fa0'
       })
     }).addTo(mizzap);
+    // change map to zoom on the returned coords
     mizzap.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
     previousHandler(event, data);
     });
