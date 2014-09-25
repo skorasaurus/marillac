@@ -1,6 +1,7 @@
 marillac
 ========
 
+Viewable at: http://skorasaurus.github.io/marillac 
 
 Marillac is a web map for food pantry coordinators to find hot meals and pantries for those in need. 
 Input a client's address and the map will move to input address. 
