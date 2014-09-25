@@ -140,7 +140,9 @@ var mizzap = L.mapbox.map('themap', 'skorasaurus.jcedc433')
 
 featLayer.loadURL('places.geojson'); 
 
-featLayer.on('ready', function() { 
+
+featLayer.on('ready', function() {
+function turnOnPopups() { 
      featLayer.eachLayer(function(polygon) { 
       polygon.bindPopup('Name: ' + polygon.feature.properties.name + '<br \/>' + 
         'Kind: ' + polygon.feature.properties.kind + '<br \/>' + 
@@ -150,6 +152,8 @@ featLayer.on('ready', function() {
         'Phone: ' + polygon.feature.properties.call ); 
          }); 
 
+}
+turnOnPopups();
 // adapted from: https://www.mapbox.com/mapbox.js/example/v1.0.0/multiple-marker-filters/
 // i'm using kind as the filter
  var typesObj = {}, types = [];
@@ -193,7 +197,9 @@ featLayer.on('ready', function() {
       // 2 in { 2: true } // true
       // 2 in { } // false
       return (feature.properties['kind'] in enabled);
+      
     });
+    turnOnPopups();
   }
 
 });   
