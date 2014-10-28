@@ -23,6 +23,8 @@
   position:absolute;
 }
 
+
+
   form {
     width: 300px;
     margin-right: 25px;
@@ -30,6 +32,8 @@
     float: left;
     position: relative;
   }
+
+
 
   form header {
     padding: 10px 50px 0;
@@ -85,9 +89,20 @@
   border-radius:3px;
   }
 
+ .intro {
+  z-index:10;
+  width: 200px;
+  font-size: 12px;
+  }
+
+
 </style>
 
 <nav id='filters' class='filter-ui'>Select: </nav>
+<class id="intro"> Welcome to Marillac; a site to find pantries; 
+    Click the X box to remove this.</class>
+
+
 <div id="themap"></div>
 
  <form id="happyPath">
@@ -118,7 +133,6 @@
   </form>
  
 </div>
-
 
  
 
@@ -207,7 +221,7 @@ turnOnPopups();
 
 /** CONFIGURE smartystreets **/
 
-    var htmlKey = "3548360835619230092";      // Put your HTML key here
+    var htmlKey = "3548360835023561920";      // Put your HTML key here
     var debug = false;          // Toggle debug mode
 
     var testRunnerVersion = "1.1.6";  // The version of this test runner page
