@@ -514,7 +514,7 @@ $(document).one("ajaxStop", function () {
 
 
 
-  var geonamesBH = new Bloodhound({
+ /* var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
       return Bloodhound.tokenizers.whitespace(d.name);
@@ -543,10 +543,10 @@ $(document).one("ajaxStop", function () {
       }
     },
     limit: 10
-  });
+  }); */
   theatersBH.initialize();
   museumsBH.initialize();
-  geonamesBH.initialize();
+ // geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
   $("#searchbox").typeahead({
@@ -560,13 +560,6 @@ $(document).one("ajaxStop", function () {
     templates: {
       header: "<h4 class='typeahead-header'><img src='assets/img/museum.png' width='24' height='28'>&nbsp;Museums</h4>",
       suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
-    }
-  }, {
-    name: "GeoNames",
-    displayKey: "name",
-    source: geonamesBH.ttAdapter(),
-    templates: {
-      header: "<h4 class='typeahead-header'><img src='assets/img/globe.png' width='25' height='25'>&nbsp;GeoNames</h4>"
     }
   }).on("typeahead:selected", function (obj, datum) {
     if (datum.source === "Theaters") {
@@ -620,19 +613,23 @@ var htmlKey = "3548360835023561920";      // Put your HTML key here
 
 jQuery.LiveAddress("3548360835023561920");
 
-    var liveaddress = $.LiveAddress({
-      key: htmlKey,   // An HTML key from your account
-      debug: true,   // Show debug stuff
-      cityStatePreference: "Cleveland, OH", // prefer Cle cities
-      stateFilter: "OH" // only autcomplete ohio
-    });
-
     $(function()
     {
       $('form2#submitEvent').submit(function() {
         alert("Form submit. Verification should happen first (if necessary), then this should occur.");
       });
     });
+
+    var liveaddress = $.LiveAddress({
+      key: htmlKey,   // An HTML key from your account
+      debug: true,   // Show debug stuff
+      cityStatePreference: "Cleveland, OH", // prefer Cle cities
+      stateFilter: "OH", // only autcomplete ohio
+      autoMap: false,
+      addresses: [{ street: '#searchbox' }]
+    });
+
+
 
         liveaddress.on("AddressAccepted", function(event, data, previousHandler)
     {
