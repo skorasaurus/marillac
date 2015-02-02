@@ -512,6 +512,8 @@ $(document).one("ajaxStop", function () {
     limit: 10
   });
 
+
+
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -551,14 +553,6 @@ $(document).one("ajaxStop", function () {
     minLength: 3,
     highlight: true,
     hint: false
-  }, {
-    name: "Theaters",
-    displayKey: "name",
-    source: theatersBH.ttAdapter(),
-    templates: {
-      header: "<h4 class='typeahead-header'><img src='assets/img/theater.png' width='24' height='28'>&nbsp;Theaters</h4>",
-      suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
-    }
   }, {
     name: "Museums",
     displayKey: "name",
@@ -619,3 +613,41 @@ if (!L.Browser.touch) {
 } else {
   L.DomEvent.disableClickPropagation(container);
 }
+
+// smartystreets configuration
+
+var htmlKey = "3548360835023561920";      // Put your HTML key here
+
+jQuery.LiveAddress("3548360835023561920");
+
+    var liveaddress = $.LiveAddress({
+      key: htmlKey,   // An HTML key from your account
+      debug: true,   // Show debug stuff
+      cityStatePreference: "Cleveland, OH", // prefer Cle cities
+      stateFilter: "OH" // only autcomplete ohio
+    });
+
+    $(function()
+    {
+      $('form2#submitEvent').submit(function() {
+        alert("Form submit. Verification should happen first (if necessary), then this should occur.");
+      });
+    });
+
+        liveaddress.on("AddressAccepted", function(event, data, previousHandler)
+    {
+    if (data.response.chosen)
+    console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
+  // create marker based on the returned coords, add it to map
+    L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
+      icon: L.mapbox.marker.icon({
+          'marker-size': 'medium',
+          'marker-symbol': 'star',
+          'marker-color': '#fa0'
+      })
+    }).addTo(map);
+    // change map to zoom on the returned coords
+    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
+    previousHandler(event, data);
+    });
+
