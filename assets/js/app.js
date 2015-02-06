@@ -609,9 +609,10 @@ if (!L.Browser.touch) {
 
 // smartystreets configuration
 
-var htmlKey = "3548360835023561920";      // Put your HTML key here
 
-jQuery.LiveAddress("3548360835023561920");
+// jQuery.LiveAddress("3548360835023561920");
+var htmlKey = "3548360835023561920";      // Put your HTML key here
+// var testRunnerVersion = "1.1.6";  // The version of this test runner page
 
     $(function()
     {
@@ -626,27 +627,9 @@ jQuery.LiveAddress("3548360835023561920");
       cityStatePreference: "Cleveland, OH", // prefer Cle cities
       stateFilter: "OH", // only autcomplete ohio
       autoMap: false,
-      addresses: [{ street: '#searchbox' }]
+      addresses: [{ street: '#dangerzone' }]
     });
 
-
-
-        liveaddress.on("AddressAccepted", function(event, data, previousHandler)
-    {
-    if (data.response.chosen)
-    console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-  // create marker based on the returned coords, add it to map
-    L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
-      icon: L.mapbox.marker.icon({
-          'marker-size': 'medium',
-          'marker-symbol': 'star',
-          'marker-color': '#fa0'
-      })
-    }).addTo(map);
-    // change map to zoom on the returned coords
-    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
-    previousHandler(event, data);
-    });
 
 
 function suppress(event) {
