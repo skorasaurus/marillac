@@ -595,7 +595,7 @@ $(document).one("ajaxStop", function () {
   });
   $(".twitter-typeahead").css("position", "static");
   $(".twitter-typeahead").css("display", "block");
-});
+}); 
 
 // Leaflet patch to make layer control scrollable on touch browsers
 var container = $(".leaflet-control-layers")[0];
@@ -605,7 +605,7 @@ if (!L.Browser.touch) {
   .disableScrollPropagation(container);
 } else {
   L.DomEvent.disableClickPropagation(container);
-}
+} 
 
 // smartystreets configuration
 
@@ -648,3 +648,12 @@ jQuery.LiveAddress("3548360835023561920");
     previousHandler(event, data);
     });
 
+
+function suppress(event) {
+  if (!event) return false;
+  if (event.preventDefault) event.preventDefault();
+  if (event.stopPropagation) event.stopPropagation();
+  if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+  if (event.cancelBubble) event.cancelBubble = true;
+  return false;
+}
