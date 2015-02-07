@@ -637,6 +637,23 @@ var htmlKey = "3548360835023561920";      // Put your HTML key here
       addresses: [{ street: '#dangerzone' }]
     });
 
+  liveaddress.on("AddressAccepted", function(event, data, previousHandler) {
+    if (data.response.chosen)
+        console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
+        L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
+          icon: L.icon({
+            iconUrl: "assets/img/marker-24.png",
+            iconSize: [24, 28],
+            iconAnchor: [12, 28],
+            popupAnchor: [0, -25]
+            }),
+          riseOnHover: true
+      
+    }).addTo(map);
+    // change map to zoom on the returned coords
+    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
+    previousHandler(event, data);  
+}); 
 
 
 function suppress(event) {
