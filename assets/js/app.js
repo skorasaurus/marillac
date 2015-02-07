@@ -274,6 +274,9 @@ var theaters = L.geoJson(null, {
       riseOnHover: true
     });
   },
+  filter: function(feature, layer) {
+    return feature.properties.kind == "Hot Meal";
+  }, 
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>Phone</th><td>" + feature.properties.call + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.address + feature.properties.zip + "</td></tr>" + "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<table>";
@@ -317,6 +320,9 @@ var museums = L.geoJson(null, {
       riseOnHover: true
     });
   },
+  filter: function(feature, layer) {
+    return feature.properties.kind == "Pantry";
+  }, 
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>Phone</th><td>" + feature.properties.call + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.address + feature.properties.zip + "</td></tr>" + "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<table>";
