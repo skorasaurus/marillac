@@ -300,7 +300,7 @@ var theaters = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/places.geojson", function (data) {
+$.getJSON("places.geojson", function (data) {
   theaters.addData(data);
   map.addLayer(theaterLayer);
 });
@@ -346,7 +346,7 @@ var museums = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/places.geojson", function (data) { 
+$.getJSON("places.geojson", function (data) { 
   museums.addData(data);
   map.addLayer(museumLayer);
 });
