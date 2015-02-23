@@ -352,7 +352,7 @@ $.getJSON("places.geojson", function (data) {
 });
 
 map = L.map("map", {
-  zoom: 10,
+  zoom: 11,
   center: [41.501860,-81.635799],
   layers: [mapquestOSM, markerClusters, highlight],
   zoomControl: false,
@@ -619,6 +619,8 @@ if (!L.Browser.touch) {
 
 // jQuery.LiveAddress("3548360835023561920");
 var htmlKey = "3548360835619230092";      // Put your HTML key here
+// var htmlKey = "3548360835023561920";      // Put your HTML key here
+
 // var testRunnerVersion = "1.1.6";  // The version of this test runner page
 
     $(function()
@@ -651,7 +653,7 @@ var htmlKey = "3548360835619230092";      // Put your HTML key here
       
     }).addTo(map);
     // change map to zoom on the returned coords
-    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 14);
+    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 15);
     previousHandler(event, data);  
 }); 
 
