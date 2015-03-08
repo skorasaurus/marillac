@@ -1809,13 +1809,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "St. Vincent de Paul Pantry",
+        "name": "St. Vincent de Paul - Southwest Ozanam Center",
         "kind": "Pantry",
-        "when": "Tuesdays,  Thursdays & Saturdays: 10:00 – 1:00",
+        "when": "Tuesdays, Thursdays & Saturdays: 10:00 – 1:00",
         "address": "2145 Broadview Road",
         "zip": 44109,
-        "call": "216-644-7610",
-        "forwhom": "44102, 44109, 44129, 44130, 44134, 44142, and 44144"
+        "call": "unknown",
+        "forwhom": "44109, 44129, 44130, 44134, 44142, and 44144"
       },
       "geometry": {
         "type": "Point",
@@ -4072,7 +4072,7 @@
       "properties": {
         "name": "Pope John Paul II Ozanam Center (at Holy Name Church)",
         "kind": "Pantry",
-        "when": "Saturdays: 9:30 - 1:30",
+        "when": "Saturdays: 9:30 - 12:30",
         "address": "8328 Broadway Avenue",
         "zip": 44105,
         "call": "216-441-6373",
