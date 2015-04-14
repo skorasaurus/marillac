@@ -4716,44 +4716,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Church of Jesus Christ Mount Moriah",
-        "kind": "Pantry",
-        "when": "3rd Saturday: 11:00 - 1:00 ",
-        "address": "9807 Cudell Avenue",
-        "zip": "44102",
-        "call": "216-315-4245",
-        "forwhom": "Open to Anyone"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.75171,
-          41.47377
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Proyecto Luz",
-        "kind": "Pantry",
-        "when": "Mondays - Fridays: By Appointment",
-        "address": "8901 Willard Avenue",
-        "zip": "44102",
-        "call": "216-651-8236",
-        "forwhom": "Westside"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.74568,
-          41.47088
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Clague Road United Church of Christ",
         "kind": "Hot Meal",
         "when": "Last Saturday: 5:00 - 6:00",
