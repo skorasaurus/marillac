@@ -1,4 +1,4 @@
-var map, featureList, theaterSearch = [], museumSearch = [];
+var map, featureList, hotmealSearch = [], pantrySearch = [];
 
 $(window).resize(function() {
   sizeLayerControl();
@@ -83,17 +83,17 @@ function sidebarClick(id) {
 function syncSidebar() {
   /* Empty sidebar features */
   $("#feature-list tbody").empty();
-  /* Loop through theaters layer and add only features which are in the map bounds */
-  theaters.eachLayer(function (layer) {
-    if (map.hasLayer(theaterLayer)) {
+  /* Loop through hotmeals layer and add only features which are in the map bounds */
+  hotmeals.eachLayer(function (layer) {
+    if (map.hasLayer(hotmealLayer)) {
       if (map.getBounds().contains(layer.getLatLng())) {
         $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/hotmeal.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       }
     }
   });
-  /* Loop through museums layer and add only features which are in the map bounds */
-  museums.eachLayer(function (layer) {
-    if (map.hasLayer(museumLayer)) {
+  /* Loop through pantries layer and add only features which are in the map bounds */
+  pantries.eachLayer(function (layer) {
+    if (map.hasLayer(pantryLayer)) {
       if (map.getBounds().contains(layer.getLatLng())) {
         $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/pantry.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       }
@@ -145,9 +145,9 @@ var markerClusters = new L.MarkerClusterGroup({
   disableClusteringAtZoom: 16
 });
 
-/* Empty layer placeholder to add to layer control for listening when to add/remove theaters to markerClusters layer */
-var theaterLayer = L.geoJson(null);
-var theaters = L.geoJson(null, {
+/* Empty layer placeholder to add to layer control for listening when to add/remove hotmeals to markerClusters layer */
+var hotmealLayer = L.geoJson(null);
+var hotmeals = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
       icon: L.icon({
@@ -175,10 +175,10 @@ var theaters = L.geoJson(null, {
         }
       });
       $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/hotmeal.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
-      theaterSearch.push({
+      hotmealSearch.push({
         name: layer.feature.properties.name,
         address: layer.feature.properties.address,
-        source: "Theaters",
+        source: "Hot Meals",
         id: L.stamp(layer),
         lat: layer.feature.geometry.coordinates[1],
         lng: layer.feature.geometry.coordinates[0]
@@ -187,13 +187,13 @@ var theaters = L.geoJson(null, {
   }
 });
 $.getJSON("places.geojson", function (data) {
-  theaters.addData(data);
-  map.addLayer(theaterLayer);
+  hotmeals.addData(data);
+  map.addLayer(hotmealLayer);
 });
 
-/* Empty layer placeholder to add to layer control for listening when to add/remove museums to markerClusters layer */
-var museumLayer = L.geoJson(null);
-var museums = L.geoJson(null, {
+/* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
+var pantryLayer = L.geoJson(null);
+var pantries = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
       icon: L.icon({
@@ -221,10 +221,10 @@ var museums = L.geoJson(null, {
         }
       });
       $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/pantry.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
-      museumSearch.push({
+      pantrySearch.push({
         name: layer.feature.properties.name,
         address: layer.feature.properties.address,
-        source: "Museums",
+        source: "Pantries",
         id: L.stamp(layer),
         lat: layer.feature.geometry.coordinates[1],
         lng: layer.feature.geometry.coordinates[0]
@@ -233,8 +233,8 @@ var museums = L.geoJson(null, {
   }
 });
 $.getJSON("places.geojson", function (data) { 
-  museums.addData(data);
-  map.addLayer(museumLayer);
+  pantries.addData(data);
+  map.addLayer(pantryLayer);
 });
 
 map = L.map("map", {
@@ -247,23 +247,23 @@ map = L.map("map", {
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
-  if (e.layer === theaterLayer) {
-    markerClusters.addLayer(theaters);
+  if (e.layer === hotmealLayer) {
+    markerClusters.addLayer(hotmeals);
     syncSidebar();
   }
-  if (e.layer === museumLayer) {
-    markerClusters.addLayer(museums);
+  if (e.layer === pantryLayer) {
+    markerClusters.addLayer(pantries);
     syncSidebar();
   }
 });
 
 map.on("overlayremove", function(e) {
-  if (e.layer === theaterLayer) {
-    markerClusters.removeLayer(theaters);
+  if (e.layer === hotmealLayer) {
+    markerClusters.removeLayer(hotmeals);
     syncSidebar();
   }
-  if (e.layer === museumLayer) {
-    markerClusters.removeLayer(museums);
+  if (e.layer === pantryLayer) {
+    markerClusters.removeLayer(pantries);
     syncSidebar();
   }
 });
@@ -350,8 +350,8 @@ var baseLayers = {
 
 var groupedOverlays = {
   "Points of Interest": {
-    "<img src='assets/img/hotmeal.png' width='32' height='32'>&nbsp;Hot Meals": theaterLayer,
-    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": museumLayer
+    "<img src='assets/img/hotmeal.png' width='32' height='32'>&nbsp;Hot Meals": hotmealLayer,
+    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": pantryLayer
   }
 };
 
@@ -382,23 +382,23 @@ $(document).one("ajaxStop", function () {
   featureList = new List("features", {valueNames: ["feature-name"]});
   featureList.sort("feature-name", {order:"asc"});
 
-  var theatersBH = new Bloodhound({
-    name: "Theaters",
+  var hotmealsBH = new Bloodhound({
+    name: "Hot Meals",
     datumTokenizer: function (d) {
       return Bloodhound.tokenizers.whitespace(d.name);
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: theaterSearch,
+    local: hotmealSearch,
     limit: 10
   });
 
-  var museumsBH = new Bloodhound({
-    name: "Museums",
+  var pantriesBH = new Bloodhound({
+    name: "Pantries",
     datumTokenizer: function (d) {
       return Bloodhound.tokenizers.whitespace(d.name);
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    local: museumSearch,
+    local: pantrySearch,
     limit: 10
   });
 
@@ -434,8 +434,8 @@ $(document).one("ajaxStop", function () {
     },
     limit: 10
   }); */
-  theatersBH.initialize();
-  museumsBH.initialize();
+  hotmealsBH.initialize();
+  pantriesBH.initialize();
  // geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -444,26 +444,26 @@ $(document).one("ajaxStop", function () {
     highlight: true,
     hint: false
   }, {
-    name: "Museums",
+    name: "Pantries",
     displayKey: "name",
-    source: museumsBH.ttAdapter(),
+    source: pantriesBH.ttAdapter(),
     templates: {
       header: "<h4 class='typeahead-header'><img src='assets/img/pantry.png' width='24' height='28'>&nbsp;Hot Meals</h4>",
       suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
     }
   }).on("typeahead:selected", function (obj, datum) {
-    if (datum.source === "Theaters") {
-      if (!map.hasLayer(theaterLayer)) {
-        map.addLayer(theaterLayer);
+    if (datum.source === "Hot Meals") {
+      if (!map.hasLayer(hotmealLayer)) {
+        map.addLayer(hotmealLayer);
       }
       map.setView([datum.lat, datum.lng], 17);
       if (map._layers[datum.id]) {
         map._layers[datum.id].fire("click");
       }
     }
-    if (datum.source === "Museums") {
-      if (!map.hasLayer(museumLayer)) {
-        map.addLayer(museumLayer);
+    if (datum.source === "Pantries") {
+      if (!map.hasLayer(pantryLayer)) {
+        map.addLayer(pantryLayer);
       }
       map.setView([datum.lat, datum.lng], 17);
       if (map._layers[datum.id]) {
@@ -501,8 +501,8 @@ if (!L.Browser.touch) {
 
 
 // jQuery.LiveAddress("3548360835023561920");
-var htmlKey = "3548360835619230092";  // github    // Put your HTML key here
-// var htmlKey = "3548360835023561920";  // local
+// var htmlKey = "3548360835619230092";  // github    // Put your HTML key here
+var htmlKey = "3548360835023561920";  // local
 
 // var testRunnerVersion = "1.1.6";  // The version of this test runner page
 
