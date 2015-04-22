@@ -527,8 +527,8 @@ var htmlKey = "3548360835023561920";  // local
         console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
         L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
           icon: L.icon({
-            iconUrl: "assets/img/hotmeal.png",
-            iconSize: [24, 28],
+            iconUrl: "assets/img/star.png",
+            iconSize: [32, 32],
             iconAnchor: [12, 28],
             popupAnchor: [0, -25]
             }),
