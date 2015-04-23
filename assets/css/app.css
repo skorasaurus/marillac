@@ -170,3 +170,17 @@ input[type="radio"], input[type="checkbox"] {
     display: none !important;
   }
 }
+
+.marker-cluster-small {
+  background-color: rgba(241, 255, 139, 0.6);
+  }
+.marker-cluster-small div {
+  background-color: rgba(238, 236, 87, 0.6);
+  }
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+  }
+.marker-cluster-medium div {
+  background-color: rgba(240, 194, 12, 0.6);
+  }
