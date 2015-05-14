@@ -501,8 +501,8 @@ if (!L.Browser.touch) {
 
 
 // jQuery.LiveAddress("3548360835023561920");
-// var htmlKey = "3548360835619230092";  // github    // Put your HTML key here
-var htmlKey = "3548360835023561920";  // local
+var htmlKey = "3548360835619230092";  // github    // Put your HTML key here
+// var htmlKey = "3548360835023561920";  // local
 
 // var testRunnerVersion = "1.1.6";  // The version of this test runner page
 
@@ -519,6 +519,7 @@ var htmlKey = "3548360835023561920";  // local
       cityStatePreference: "Cleveland, OH", // prefer Cle cities
       stateFilter: "OH", // only autcomplete ohio
       autoMap: false,
+      geolocate: false, // we'll leave false for now, but toggle this and cityStatePreference as we do further testing
       addresses: [{ street: '#dangerzone' }]
     });
 
