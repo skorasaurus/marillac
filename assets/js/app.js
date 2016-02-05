@@ -186,10 +186,15 @@ var hotmeals = L.geoJson(null, {
     }
   }
 });
-$.getJSON("places.geojson", function (data) {
+
+
+var myLayer = omnivore.csv('raw.csv', null, hotmeals);
+
+/* 
+  what w'ere replacing  $.getJSON("places.geojson", function (data) {
   hotmeals.addData(data);
   map.addLayer(hotmealLayer);
-});
+}); */ 
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
 var pantryLayer = L.geoJson(null);
@@ -232,10 +237,12 @@ var pantries = L.geoJson(null, {
     }
   }
 });
-$.getJSON("places.geojson", function (data) { 
-  pantries.addData(data);
-  map.addLayer(pantryLayer);
-});
+
+
+var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', function() {
+        // when this is fired, the layer
+        // is done being initialized
+    }).addTo(map);
 
 map = L.map("map", {
   zoom: 11,
