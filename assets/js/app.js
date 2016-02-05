@@ -232,10 +232,7 @@ var pantries = L.geoJson(null, {
     }
   }
 });
-$.getJSON("places.geojson", function (data) { 
-  pantries.addData(data);
-  map.addLayer(pantryLayer);
-});
+
 
 map = L.map("map", {
   zoom: 11,
@@ -244,6 +241,11 @@ map = L.map("map", {
   zoomControl: false,
   attributionControl: false
 });
+
+var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', function() {
+        // when this is fired, the layer
+        // is done being initialized
+    }).addTo(map);
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
