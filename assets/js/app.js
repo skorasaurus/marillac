@@ -93,7 +93,7 @@ function syncSidebar() {
   });
   /* Loop through pantries layer and add only features which are in the map bounds */
   pantries.eachLayer(function (layer) {
-    if (map.hasLayer(pantryLayer)) {
+    if (map.hasLayer(myLayer)) {
       if (map.getBounds().contains(layer.getLatLng())) {
         $("#feature-list tbody").append('<tr class="feature-row" id="' + L.stamp(layer) + '" lat="' + layer.getLatLng().lat + '" lng="' + layer.getLatLng().lng + '"><td style="vertical-align: middle;"><img width="16" height="18" src="assets/img/pantry.png"></td><td class="feature-name">' + layer.feature.properties.name + '</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       }
@@ -193,8 +193,7 @@ $.getJSON("places.geojson", function (data) {
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
 var pantryLayer = L.geoJson(null);
-var pantries = L.geoJson(null, {
-});
+var pantries = L.geoJson(null);
 
 
 map = L.map("map", {
@@ -245,7 +244,7 @@ var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
   }
         // when this is fired, the layer
         // is done being initialized
-    }).addTo(map);
+}).addTo(map);
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
@@ -253,7 +252,7 @@ map.on("overlayadd", function(e) {
     markerClusters.addLayer(hotmeals);
     syncSidebar();
   }
-  if (e.layer === pantryLayer) {
+  if (e.layer === myLayer) {
     markerClusters.addLayer(pantries);
     syncSidebar();
   }
@@ -264,7 +263,7 @@ map.on("overlayremove", function(e) {
     markerClusters.removeLayer(hotmeals);
     syncSidebar();
   }
-  if (e.layer === pantryLayer) {
+  if (e.layer === myLayer) {
     markerClusters.removeLayer(pantries);
     syncSidebar();
   }
@@ -353,7 +352,7 @@ var baseLayers = {
 var groupedOverlays = {
   "Points of Interest": {
     "<img src='assets/img/hotmeal.png' width='32' height='32'>&nbsp;Hot Meals": hotmealLayer,
-    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": pantryLayer
+    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": myLayer
   }
 };
 
@@ -431,8 +430,8 @@ $(document).one("ajaxStop", function () {
       }
     }
     if (datum.source === "Pantries") {
-      if (!map.hasLayer(pantryLayer)) {
-        map.addLayer(pantryLayer);
+      if (!map.hasLayer(myLayer)) {
+        map.addLayer(myLayer);
       }
       map.setView([datum.lat, datum.lng], 17);
       if (map._layers[datum.id]) {
