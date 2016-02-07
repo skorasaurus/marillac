@@ -193,19 +193,8 @@ $.getJSON("places.geojson", function (data) {
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
 var pantryLayer = L.geoJson(null);
-var pantries = L.geoJson(null);
-
-
-map = L.map("map", {
-  zoom: 11,
-  center: [41.501860,-81.635799],
-  layers: [mapquestOSM, markerClusters, highlight],
-  zoomControl: false,
-  attributionControl: false
-});
-
-var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
-  pointToLayer: function (feature, latlng) {
+var pantries = L.geoJson(null,
+{  pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
       icon: L.icon({
         iconUrl: "assets/img/pantry.png",
@@ -219,12 +208,25 @@ var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
   },
   filter: function(feature, layer) {
     return feature.properties.kind == "Pantry";
-  },  
+  },  }
+  );
+
+
+map = L.map("map", {
+  zoom: 11,
+  center: [41.501860,-81.635799],
+  layers: [mapquestOSM, markerClusters, highlight],
+  zoomControl: false,
+  attributionControl: false
+});
+
+var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>Phone</th><td>" + feature.properties.call + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.address + "&nbsp;&nbsp;" + feature.properties.zip + "</td></tr>" + "<tr><th>When</th><td>" + feature.properties.when + "</td></tr>" + "<tr><th>Eligible for</th><td>" + feature.properties.forwhom + "</td></tr>" + "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
+          console.log(feature.properties.name);
           $("#feature-title").html(feature.properties.name);
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
