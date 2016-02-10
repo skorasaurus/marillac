@@ -208,20 +208,8 @@ var pantries = L.geoJson(null,
   },
   filter: function(feature, layer) {
     return feature.properties.kind == "Pantry";
-  },  }
-  );
-
-
-map = L.map("map", {
-  zoom: 11,
-  center: [41.501860,-81.635799],
-  layers: [mapquestOSM, markerClusters, highlight],
-  zoomControl: false,
-  attributionControl: false
-});
-
-var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
-  onEachFeature: function (feature, layer) {
+  },  
+ onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.name + "</td></tr>" + "<tr><th>Phone</th><td>" + feature.properties.call + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.address + "&nbsp;&nbsp;" + feature.properties.zip + "</td></tr>" + "<tr><th>When</th><td>" + feature.properties.when + "</td></tr>" + "<tr><th>Eligible for</th><td>" + feature.properties.forwhom + "</td></tr>" + "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<table>";
       layer.on({
@@ -244,6 +232,24 @@ var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
       });
     }
   }
+
+}
+  );
+
+
+map = L.map("map", {
+  zoom: 11,
+  center: [41.501860,-81.635799],
+  layers: [mapquestOSM, markerClusters, highlight],
+  zoomControl: false,
+  attributionControl: false
+});
+
+
+
+
+var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
+ 
         // when this is fired, the layer
         // is done being initialized
 }).addTo(map);
