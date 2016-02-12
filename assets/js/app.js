@@ -192,7 +192,6 @@ $.getJSON("places.geojson", function (data) {
 });
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
-var pantryLayer = L.geoJson(null);
 var pantries = L.geoJson(null,
 {  pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
@@ -245,14 +244,11 @@ map = L.map("map", {
   attributionControl: false
 });
 
+var myLayer = omnivore.csv('raw.csv', null, pantries).addTo(map);
+
+// var mLayer = omnivore.csv('raw.csv', null, pantries).addTo(map);
 
 
-
-var myLayer = omnivore.csv('raw.csv', null, pantries).on('ready', {
- 
-        // when this is fired, the layer
-        // is done being initialized
-}).addTo(map);
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
@@ -276,6 +272,7 @@ map.on("overlayremove", function(e) {
     syncSidebar();
   }
 });
+
 
 /* Filter sidebar feature list to only show features in current map bounds */
 map.on("moveend", function (e) {
@@ -360,7 +357,7 @@ var baseLayers = {
 var groupedOverlays = {
   "Points of Interest": {
     "<img src='assets/img/hotmeal.png' width='32' height='32'>&nbsp;Hot Meals": hotmealLayer,
-    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": myLayer
+    "<img src='assets/img/pantry.png' width='32' height='32'>&nbsp;Pantries": pantries
   }
 };
 
