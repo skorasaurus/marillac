@@ -146,7 +146,6 @@ var markerClusters = new L.MarkerClusterGroup({
 });
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove hotmeals to markerClusters layer */
-var hotmealLayer = L.geoJson(null);
 var hotmeals = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
@@ -186,10 +185,7 @@ var hotmeals = L.geoJson(null, {
     }
   }
 });
-$.getJSON("places.geojson", function (data) {
-  hotmeals.addData(data);
-  map.addLayer(hotmealLayer);
-});
+
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove pantries to markerClusters layer */
 var pantries = L.geoJson(null,
@@ -232,8 +228,7 @@ var pantries = L.geoJson(null,
     }
   }
 
-}
-  );
+});
 
 
 map = L.map("map", {
@@ -246,7 +241,7 @@ map = L.map("map", {
 
 var myLayer = omnivore.csv('raw.csv', null, pantries).addTo(map);
 
-// var mLayer = omnivore.csv('raw.csv', null, pantries).addTo(map);
+var hotmealLayer = omnivore.csv('raw.csv', null, hotmeals).addTo(map);
 
 
 
