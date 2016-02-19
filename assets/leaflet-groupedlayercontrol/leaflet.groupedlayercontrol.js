@@ -1,5 +1,291 @@
-/*! Version: 0.4.0
-Date: 2015-10-29 */
+/* global L */
 
-L.Control.GroupedLayers=L.Control.extend({options:{collapsed:!0,position:"topright",autoZIndex:!0,exclusiveGroups:[],groupCheckboxes:!1},initialize:function(a,b,c){var d,e;L.Util.setOptions(this,c),this._layers={},this._lastZIndex=0,this._handlingClick=!1,this._groupList=[],this._domGroups=[];for(d in a)this._addLayer(a[d],d);for(d in b)for(var e in b[d])this._addLayer(b[d][e],e,d,!0)},onAdd:function(a){return this._initLayout(),this._update(),a.on("layeradd",this._onLayerChange,this).on("layerremove",this._onLayerChange,this),this._container},onRemove:function(a){a.off("layeradd",this._onLayerChange).off("layerremove",this._onLayerChange)},addBaseLayer:function(a,b){return this._addLayer(a,b),this._update(),this},addOverlay:function(a,b,c){return this._addLayer(a,b,c,!0),this._update(),this},removeLayer:function(a){var b=L.Util.stamp(a);return delete this._layers[b],this._update(),this},_initLayout:function(){var a="leaflet-control-layers",b=this._container=L.DomUtil.create("div",a);b.setAttribute("aria-haspopup",!0),L.Browser.touch?L.DomEvent.on(b,"click",L.DomEvent.stopPropagation):(L.DomEvent.disableClickPropagation(b),L.DomEvent.on(b,"wheel",L.DomEvent.stopPropagation));var c=this._form=L.DomUtil.create("form",a+"-list");if(this.options.collapsed){L.Browser.android||L.DomEvent.on(b,"mouseover",this._expand,this).on(b,"mouseout",this._collapse,this);var d=this._layersLink=L.DomUtil.create("a",a+"-toggle",b);d.href="#",d.title="Layers",L.Browser.touch?L.DomEvent.on(d,"click",L.DomEvent.stop).on(d,"click",this._expand,this):L.DomEvent.on(d,"focus",this._expand,this),this._map.on("click",this._collapse,this)}else this._expand();this._baseLayersList=L.DomUtil.create("div",a+"-base",c),this._separator=L.DomUtil.create("div",a+"-separator",c),this._overlaysList=L.DomUtil.create("div",a+"-overlays",c),b.appendChild(c)},_addLayer:function(a,b,c,d){var e=L.Util.stamp(a);this._layers[e]={layer:a,name:b,overlay:d},c=c||"";var f=this._indexOf(this._groupList,c);-1===f&&(f=this._groupList.push(c)-1);var g=-1!=this._indexOf(this.options.exclusiveGroups,c);this._layers[e].group={name:c,id:f,exclusive:g},this.options.autoZIndex&&a.setZIndex&&(this._lastZIndex++,a.setZIndex(this._lastZIndex))},_update:function(){if(this._container){this._baseLayersList.innerHTML="",this._overlaysList.innerHTML="",this._domGroups.length=0;var a,b,c=!1,d=!1;for(a in this._layers)b=this._layers[a],this._addItem(b),d=d||b.overlay,c=c||!b.overlay;this._separator.style.display=d&&c?"":"none"}},_onLayerChange:function(a){var b=this._layers[L.Util.stamp(a.layer)];if(b){this._handlingClick||this._update();var c=b.overlay?"layeradd"===a.type?"overlayadd":"overlayremove":"layeradd"===a.type?"baselayerchange":null;c&&this._map.fire(c,b)}},_createRadioElement:function(a,b){var c='<input type="radio" class="leaflet-control-layers-selector" name="'+a+'"';b&&(c+=' checked="checked"'),c+="/>";var d=document.createElement("div");return d.innerHTML=c,d.firstChild},_addItem:function(a){var b,c,d=document.createElement("label"),e=this._map.hasLayer(a.layer);a.overlay?a.group.exclusive?(groupRadioName="leaflet-exclusive-group-layer-"+a.group.id,b=this._createRadioElement(groupRadioName,e)):(b=document.createElement("input"),b.type="checkbox",b.className="leaflet-control-layers-selector",b.defaultChecked=e):b=this._createRadioElement("leaflet-base-layers",e),b.layerId=L.Util.stamp(a.layer),b.groupID=a.group.id,L.DomEvent.on(b,"click",this._onInputClick,this);var f=document.createElement("span");if(f.innerHTML=" "+a.name,d.appendChild(b),d.appendChild(f),a.overlay){c=this._overlaysList;var g=this._domGroups[a.group.id];if(!g){g=document.createElement("div"),g.className="leaflet-control-layers-group",g.id="leaflet-control-layers-group-"+a.group.id;var h=document.createElement("label");if(h.className="leaflet-control-layers-group-label",""!=a.group.name&&!a.group.exclusive&&this.options.groupCheckboxes){var i=document.createElement("input");i.type="checkbox",i.className="leaflet-control-layers-group-selector",i.groupID=a.group.id,i.legend=this,L.DomEvent.on(i,"click",this._onGroupInputClick,i),h.appendChild(i)}var j=document.createElement("span");j.className="leaflet-control-layers-group-name",j.innerHTML=a.group.name,h.appendChild(j),g.appendChild(h),c.appendChild(g),this._domGroups[a.group.id]=g}c=g}else c=this._baseLayersList;return c.appendChild(d),d},_onGroupInputClick:function(){var a,b,c;this_legend=this.legend,this_legend._handlingClick=!0;var d=this_legend._form.getElementsByTagName("input"),e=d.length;for(a=0;e>a;a++)b=d[a],b.groupID==this.groupID&&"leaflet-control-layers-selector"==b.className&&(b.checked=this.checked,c=this_legend._layers[b.layerId],b.checked&&!this_legend._map.hasLayer(c.layer)?this_legend._map.addLayer(c.layer):!b.checked&&this_legend._map.hasLayer(c.layer)&&this_legend._map.removeLayer(c.layer));this_legend._handlingClick=!1},_onInputClick:function(){var a,b,c,d=this._form.getElementsByTagName("input"),e=d.length;for(this._handlingClick=!0,a=0;e>a;a++)b=d[a],"leaflet-control-layers-selector"==b.className&&(c=this._layers[b.layerId],b.checked&&!this._map.hasLayer(c.layer)?this._map.addLayer(c.layer):!b.checked&&this._map.hasLayer(c.layer)&&this._map.removeLayer(c.layer));this._handlingClick=!1},_expand:function(){L.DomUtil.addClass(this._container,"leaflet-control-layers-expanded")},_collapse:function(){this._container.className=this._container.className.replace(" leaflet-control-layers-expanded","")},_indexOf:function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1}}),L.control.groupedLayers=function(a,b,c){return new L.Control.GroupedLayers(a,b,c)};
-//# sourceMappingURL=leaflet.groupedlayercontrol.min.js.map
+// A layer control which provides for layer groupings.
+// Author: Ishmael Smyrnow
+L.Control.GroupedLayers = L.Control.extend({
+  
+  options: {
+    collapsed: true,
+    position: 'topright',
+    autoZIndex: true
+  },
+
+  initialize: function (baseLayers, groupedOverlays, options) {
+    var i, j;
+    L.Util.setOptions(this, options);
+
+    this._layers = {};
+    this._lastZIndex = 0;
+    this._handlingClick = false;
+    this._groupList = [];
+    this._domGroups = [];
+
+    for (i in baseLayers) {
+      this._addLayer(baseLayers[i], i);
+    }
+
+    for (i in groupedOverlays) {
+      for (var j in groupedOverlays[i]) {
+        this._addLayer(groupedOverlays[i][j], j, i, true);
+      }
+    }
+  },
+
+  onAdd: function (map) {
+    this._initLayout();
+    this._update();
+
+    map
+        .on('layeradd', this._onLayerChange, this)
+        .on('layerremove', this._onLayerChange, this);
+
+    return this._container;
+  },
+
+  onRemove: function (map) {
+    map
+        .off('layeradd', this._onLayerChange)
+        .off('layerremove', this._onLayerChange);
+  },
+
+  addBaseLayer: function (layer, name) {
+    this._addLayer(layer, name);
+    this._update();
+    return this;
+  },
+
+  addOverlay: function (layer, name, group) {
+    this._addLayer(layer, name, group, true);
+    this._update();
+    return this;
+  },
+
+  removeLayer: function (layer) {
+    var id = L.Util.stamp(layer);
+    delete this._layers[id];
+    this._update();
+    return this;
+  },
+
+  _initLayout: function () {
+    var className = 'leaflet-control-layers',
+        container = this._container = L.DomUtil.create('div', className);
+
+    //Makes this work on IE10 Touch devices by stopping it from firing a mouseout event when the touch is released
+    container.setAttribute('aria-haspopup', true);
+
+    if (!L.Browser.touch) {
+      L.DomEvent.disableClickPropagation(container);
+      L.DomEvent.on(container, 'wheel', L.DomEvent.stopPropagation);
+    } else {
+      L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
+    }
+
+    var form = this._form = L.DomUtil.create('form', className + '-list');
+
+    if (this.options.collapsed) {
+      if (!L.Browser.android) {
+        L.DomEvent
+            .on(container, 'mouseover', this._expand, this)
+            .on(container, 'mouseout', this._collapse, this);
+      }
+      var link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
+      link.href = '#';
+      link.title = 'Layers';
+
+      if (L.Browser.touch) {
+        L.DomEvent
+            .on(link, 'click', L.DomEvent.stop)
+            .on(link, 'click', this._expand, this);
+      }
+      else {
+        L.DomEvent.on(link, 'focus', this._expand, this);
+      }
+
+      this._map.on('click', this._collapse, this);
+      // TODO keyboard accessibility
+    } else {
+      this._expand();
+    }
+
+    this._baseLayersList = L.DomUtil.create('div', className + '-base', form);
+    this._separator = L.DomUtil.create('div', className + '-separator', form);
+    this._overlaysList = L.DomUtil.create('div', className + '-overlays', form);
+
+    container.appendChild(form);
+  },
+
+  _addLayer: function (layer, name, group, overlay) {
+    var id = L.Util.stamp(layer);
+
+    this._layers[id] = {
+      layer: layer,
+      name: name,
+      overlay: overlay
+    };
+
+    if (group) {
+      var groupId = this._groupList.indexOf(group);
+
+      if (groupId === -1) {
+        groupId = this._groupList.push(group) - 1;
+      }
+
+      this._layers[id].group = {
+        name: group,
+        id: groupId
+      };
+    }
+
+    if (this.options.autoZIndex && layer.setZIndex) {
+      this._lastZIndex++;
+      layer.setZIndex(this._lastZIndex);
+    }
+  },
+
+  _update: function () {
+    if (!this._container) {
+      return;
+    }
+
+    this._baseLayersList.innerHTML = '';
+    this._overlaysList.innerHTML = '';
+    this._domGroups.length = 0;
+
+    var baseLayersPresent = false,
+        overlaysPresent = false,
+        i, obj;
+
+    for (i in this._layers) {
+      obj = this._layers[i];
+      this._addItem(obj);
+      overlaysPresent = overlaysPresent || obj.overlay;
+      baseLayersPresent = baseLayersPresent || !obj.overlay;
+    }
+
+    this._separator.style.display = overlaysPresent && baseLayersPresent ? '' : 'none';
+  },
+
+  _onLayerChange: function (e) {
+    var obj = this._layers[L.Util.stamp(e.layer)];
+
+    if (!obj) { return; }
+
+    if (!this._handlingClick) {
+      this._update();
+    }
+
+    var type = obj.overlay ?
+      (e.type === 'layeradd' ? 'overlayadd' : 'overlayremove') :
+      (e.type === 'layeradd' ? 'baselayerchange' : null);
+
+    if (type) {
+      this._map.fire(type, obj);
+    }
+  },
+
+  // IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+  _createRadioElement: function (name, checked) {
+
+    var radioHtml = '<input type="radio" class="leaflet-control-layers-selector" name="' + name + '"';
+    if (checked) {
+      radioHtml += ' checked="checked"';
+    }
+    radioHtml += '/>';
+
+    var radioFragment = document.createElement('div');
+    radioFragment.innerHTML = radioHtml;
+
+    return radioFragment.firstChild;
+  },
+
+  _addItem: function (obj) {
+    var label = document.createElement('label'),
+        input,
+        checked = this._map.hasLayer(obj.layer),
+        container;
+
+    if (obj.overlay) {
+      input = document.createElement('input');
+      input.type = 'checkbox';
+      input.className = 'leaflet-control-layers-selector';
+      input.defaultChecked = checked;
+    } else {
+      input = this._createRadioElement('leaflet-base-layers', checked);
+    }
+
+    input.layerId = L.Util.stamp(obj.layer);
+
+    L.DomEvent.on(input, 'click', this._onInputClick, this);
+
+    var name = document.createElement('span');
+    name.innerHTML = ' ' + obj.name;
+
+    label.appendChild(input);
+    label.appendChild(name);
+
+    if (obj.overlay) {
+      container = this._overlaysList;
+
+      var groupContainer = this._domGroups[obj.group.id];
+
+      // Create the group container if it doesn't exist
+      if (!groupContainer) {
+        groupContainer = document.createElement('div');
+        groupContainer.className = 'leaflet-control-layers-group';
+        groupContainer.id = 'leaflet-control-layers-group-' + obj.group.id;
+
+        var groupLabel = document.createElement('span');
+        groupLabel.className = 'leaflet-control-layers-group-name';
+        groupLabel.innerHTML = obj.group.name;
+
+        groupContainer.appendChild(groupLabel);
+        container.appendChild(groupContainer);
+
+        this._domGroups[obj.group.id] = groupContainer;
+      }
+
+      container = groupContainer;
+    } else {
+      container = this._baseLayersList;
+    }
+
+    container.appendChild(label);
+
+    return label;
+  },
+
+  _onInputClick: function () {
+    var i, input, obj,
+        inputs = this._form.getElementsByTagName('input'),
+        inputsLen = inputs.length;
+
+    this._handlingClick = true;
+
+    for (i = 0; i < inputsLen; i++) {
+      input = inputs[i];
+      obj = this._layers[input.layerId];
+
+      if (input.checked && !this._map.hasLayer(obj.layer)) {
+        this._map.addLayer(obj.layer);
+
+      } else if (!input.checked && this._map.hasLayer(obj.layer)) {
+        this._map.removeLayer(obj.layer);
+      }
+    }
+
+    this._handlingClick = false;
+  },
+
+  _expand: function () {
+    L.DomUtil.addClass(this._container, 'leaflet-control-layers-expanded');
+  },
+
+  _collapse: function () {
+    this._container.className = this._container.className.replace(' leaflet-control-layers-expanded', '');
+  }
+});
+
+L.control.groupedLayers = function (baseLayers, groupedOverlays, options) {
+  return new L.Control.GroupedLayers(baseLayers, groupedOverlays, options);
+};
