@@ -4260,13 +4260,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "The Rock Community Church",
+        "name": "Garfield Human Development Corporation",
         "kind": "Pantry",
-        "when": "3rd Saturday: 8:00 - 11:00; Wednesdays: 5:30 -6:30 (except before the 3rd Saturday) & Sundays: 11:15 - 12:30",
+        "when": "3rd Saturday: 8:00 - 11:00; 2nd, 3rd, 4th & 5th Wednesdays: 5:30 - 6:30 (Closed for the month of August)",
         "address": "9403 Garfield Boulevard",
         "zip": 44125,
         "call": "216-429-2636",
-        "forwhom": "44105, 44125, 44128,44131 and 44137"
+        "forwhom": "44125"
       },
       "geometry": {
         "type": "Point",
@@ -4843,6 +4843,25 @@
         "coordinates": [
           -81.85354,
           41.36407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Audrey's Outreach",
+        "kind": "Pantry",
+        "when": "Mondays: 11:00 - 2:00 & Thursdays: 4:00 - 7:00",
+        "address": "16845 Holland Road",
+        "zip": "44142",
+        "call": "216-433-1515",
+        "forwhom": "Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.81632,
+          41.3949
         ]
       }
     }
