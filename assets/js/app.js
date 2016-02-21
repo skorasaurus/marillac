@@ -239,31 +239,31 @@ map = L.map("map", {
   attributionControl: false
 });
 
-var myLayer = omnivore.csv('raw.csv', null, pantries).addTo(map);
+var myLayer = omnivore.csv('raw.csv', null, pantries)
 
-var hotmealLayer = omnivore.csv('raw.csv', null, hotmeals).addTo(map);
+var hotmealLayer = omnivore.csv('raw.csv', null, hotmeals)
 
 
 
 /* Layer control listeners that allow for a single markerClusters layer */
 map.on("overlayadd", function(e) {
   if (e.layer === hotmealLayer) {
-    markerClusters.addLayer(hotmeals);
+    markerClusters.addLayer(hotmealLayer);
     syncSidebar();
   }
   if (e.layer === myLayer) {
-    markerClusters.addLayer(pantries);
+    markerClusters.addLayer(myLayer);
     syncSidebar();
   }
 });
 
 map.on("overlayremove", function(e) {
   if (e.layer === hotmealLayer) {
-    markerClusters.removeLayer(hotmeals);
+    markerClusters.removeLayer(hotmealLayer);
     syncSidebar();
   }
   if (e.layer === myLayer) {
-    markerClusters.removeLayer(pantries);
+    markerClusters.removeLayer(myLayer);
     syncSidebar();
   }
 });
