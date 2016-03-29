@@ -4830,6 +4830,25 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Cleveland Kosher Food Pantry",
+        "kind": "Pantry",
+        "when": "Thursdays: 6:00 - 7:00",
+        "address": "2004 South Green Road",
+        "zip": "44121",
+        "call": "216-382-7202",
+        "forwhom": "Beachwood, Cleveland Heights, South Euclid and University Heights"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.51991,
+          41.50361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Audrey's Outreach",
         "kind": "Pantry",
         "when": "Mondays: 11:00 - 2:00 & Thursdays: 4:00 - 7:00",
