@@ -1087,25 +1087,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bread Basket",
-        "kind": "Pantry",
-        "when": "Tuesdays: 5:30 - 7:30 & Thursdays: 1:30 - 3:30",
-        "address": "15135 Triskett Road",
-        "zip": 44111,
-        "call": "216-251-0782",
-        "forwhom": "Within this area: Lakewood border, West 117th Street, Lorain Avenue and Fairview Park border. They also serve Fairview Park."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.80067,
-          41.45696
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Collinwood Area Church Council",
         "kind": "Pantry",
         "when": "Mondays  Wednesdays & Fridays: 11:45 – 2:30",
@@ -3044,13 +3025,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bountiful Basement (at Blessed TrinityCatholic Church)",
+        "name": "Bountiful Basement (at Blessed Trinity Catholic Church)",
         "kind": "Pantry",
-        "when": "Tuesdays: 9:30 - 12:00",
+        "when": "Tuesdays: 9:30 - 12:00; Wednesdays: 5:00 - 6:45; Thursdays: 9:30 - 12:00",
         "address": "4370 West 140th Street",
         "zip": 44135,
         "call": "216-671-3870",
-        "forwhom": "44111, 44135 & East of West 117th Street"
+        "forwhom": "Contact program for more information"
       },
       "geometry": {
         "type": "Point",
