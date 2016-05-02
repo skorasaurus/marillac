@@ -614,7 +614,7 @@
       "properties": {
         "name": "Mt. Nebo Missionary Baptist Church",
         "kind": "Hot Meal",
-        "when": "Fridays: 5:00 - 6:45",
+        "when": "Fridays: 5:00 - 6:30",
         "address": "12701 Superior Avenue",
         "zip": 44112,
         "call": "216-761-3133",
@@ -671,7 +671,7 @@
       "properties": {
         "name": "Mt. Nebo Missionary Baptist Church",
         "kind": "Pantry",
-        "when": "4th Friday: 8:00 - 11:00",
+        "when": "4th Friday: 8:00 - 12:00",
         "address": "12919 Superior Avenue",
         "zip": 44112,
         "call": "216-761-3133",
@@ -1017,7 +1017,7 @@
         "address": "14715 Euclid Avenue",
         "zip": 44112,
         "call": "216-486-8464",
-        "forwhom": ""
+        "forwhom": "Open to anyone"
       },
       "geometry": {
         "type": "Point",
@@ -2324,7 +2324,7 @@
       "properties": {
         "name": "Abundance Food Pantry",
         "kind": "Pantry",
-        "when": "Tuesdays & Thursdays: 1:00 - 3:00",
+        "when": "Tuesdays: 1:00 - 3:00",
         "address": "3031 Monticello Boulevard",
         "zip": 44118,
         "call": "216-321-2660",
@@ -2343,7 +2343,7 @@
       "properties": {
         "name": "St. Michael the Archangel - St. Procop Pantry Program",
         "kind": "Pantry",
-        "when": "Mondays, Tuesdays, Thursdays & Fridays: 1:00 - 3:00",
+        "when": "Mondays & Thursdays: 12:30 - 3:00",
         "address": "3114 Scranton Road",
         "zip": 44109,
         "call": "216-621-3847",
@@ -2386,6 +2386,25 @@
         "zip": 44113,
         "call": "216-631-4741",
         "forwhom": "Open to Anyone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.70862138271332,
+          41.481889693789334
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "name": "West Side Catholic Center",
+        "kind": "Pantry",
+        "when": "2nd Saturday: 10:00 - 12:00",
+        "address": "3135 Lorain Avenue",
+        "zip": 44113,
+        "call": "216-631-4741",
+        "forwhom": "44113"
       },
       "geometry": {
         "type": "Point",
@@ -3614,13 +3633,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "We C.A.R.E. Community Outreach Ministries",
+        "name": "Mt. Gillion Missionary Baptist Church",
         "kind": "Pantry",
         "when": "3rd Tuesday: 10:30 - 1:00",
         "address": "7025 Cedar Avenue",
         "zip": 44103,
         "call": "216-431-4130",
-        "forwhom": ""
+        "forwhom": "Open to anyone"
       },
       "geometry": {
         "type": "Point",
