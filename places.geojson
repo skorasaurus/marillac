@@ -2132,25 +2132,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bethlehem Temple of Praise Church",
-        "kind": "Pantry",
-        "when": "3rd Saturday: 12:00 - 2:00",
-        "address": "2607 Archwood Avenue",
-        "zip": 44109,
-        "call": "216-335-9115",
-        "forwhom": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.70198,
-          41.45259
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Refuge Family Worship Center",
         "kind": "Pantry",
         "when": "1st Saturday: For Emergencies & 3rd Saturday: 10:00 - 1:00",
