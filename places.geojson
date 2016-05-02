@@ -2702,7 +2702,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "WSEM Food Center at Near West Food & Family Service Center (at St. Patrick's Church)",
+        "name": St. Vincent de Paul Near West Food Center (at St. Patrick's Church)",
         "kind": "Pantry",
         "when": "Wednesdays & Fridays: 10:00 – 2:00",
         "address": "3610 Bridge Avenue",
@@ -2778,7 +2778,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "WSEM Food Center at Brookside Hunger Center",
+        "name": "St. Vincent de Paul Brookside Food Center",
         "kind": "Pantry",
         "when": "Mondays - Fridays: 10:00 - 2:00",
         "address": "3802 Pearl Road",
@@ -4621,7 +4621,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "WSEM Food Center at Community Corner Hunger Center ",
+        "name": "St. Vincent de Paul Community Corner Food Center",
         "kind": "Pantry",
         "when": "Mondays - Fridays: 10:00 - 2:00",
         "address": "8302 Detroit Avenue",
