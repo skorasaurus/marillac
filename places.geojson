@@ -633,7 +633,7 @@
       "properties": {
         "name": "Walk of Faith Community Center",
         "kind": "Hot Meal",
-        "when": "Mondays - Fridays: 9:00 - 10:00",
+        "when": "Mondays - Fridays: 8:30 - 10:30",
         "address": "12833 Lorain Avenue",
         "zip": 44111,
         "call": "216-941-3270",
@@ -652,7 +652,7 @@
       "properties": {
         "name": "Walk of Faith Community Center",
         "kind": "Pantry",
-        "when": "Wednesdays: 5:30 - 7:30",
+        "when": "Tuesdays, Wednesdays, Thursdays: 8:30 - 9:30",
         "address": "12833 Lorain Avenue",
         "zip": 44111,
         "call": "216-941-3270",
