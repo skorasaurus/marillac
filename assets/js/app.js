@@ -469,6 +469,7 @@ var options = {
   position: 'topright',
   placeholder: 'Type your address here', 
   autocomplete: true,
+  focus: true, 
   markers:  {icon: L.icon({
             iconUrl: "assets/img/star.png",
             iconSize: [32, 32],
