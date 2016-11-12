@@ -479,8 +479,7 @@ var options = {
 }
 };
 
-L.control.geocoder('mapzen-c3U9gXv', options).addTo(map);
-
+var myGeocoder = L.control.geocoder('mapzen-c3U9gXv', options).addTo(map);
 
 
 function suppress(event) {
