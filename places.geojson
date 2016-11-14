@@ -1144,44 +1144,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Dunham Avenue Christian Church",
-        "kind": "Hot Meal",
-        "when": "Saturdays: 4:30 - 5:30",
-        "address": "1629 East 66th Street",
-        "zip": 44103,
-        "call": "216-432-1234",
-        "forwhom": "Open to Anyone"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.64435,
-          41.50909
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Dunham Avenue Christian Church",
-        "kind": "Pantry",
-        "when": "Last Saturday: 10:00 - 12:00",
-        "address": "1629 East 66th Street",
-        "zip": 44103,
-        "call": "216-432-1234",
-        "forwhom": "Open to Anyone"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.64435,
-          41.50909
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Calvary United Methodist Church",
         "kind": "Hot Meal",
         "when": "3rd Tuesday: meal starts at 5:30",
@@ -3696,7 +3658,7 @@
         "address": "7101 Carnegie Avenue",
         "zip": 44103,
         "call": "216-391-0064",
-        "forwhom": "44102 & 44109"
+        "forwhom": "44102 through 44109"
       },
       "geometry": {
         "type": "Point",
@@ -4520,25 +4482,6 @@
         "coordinates": [
           -81.73033,
           41.47934
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ebenezer Seventh Day Adventist Church",
-        "kind": "Pantry",
-        "when": "4th Thursday: 6:00 - 8:00 (the week before if the 4th is a holiday)",
-        "address": "7322 Elton Avenue",
-        "zip": "44102",
-        "call": "216-939-8661",
-        "forwhom": "Open to Anyone"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.73502,
-          41.47512
         ]
       }
     },
