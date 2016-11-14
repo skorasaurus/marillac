@@ -464,7 +464,7 @@ if (!L.Browser.touch) {
 // mapzen-leaflet geocoder configuration 
 // for more information; see https://github.com/mapzen/leaflet-geocoder
 
-var options = {
+var myOptions = {
   expanded: true, 
   position: 'topright',
   placeholder: 'Type your address here', 
@@ -479,14 +479,11 @@ var options = {
 }
 };
 
-var myGeocoder = L.control.geocoder('mapzen-c3U9gXv', options).addTo(map);
+var myGeocoder = L.control.geocoder('mapzen-c3U9gXv', myOptions).addTo(map);
+
+myGeocoder.on('select', function (e) {
+  console.log('you’ve selected ' + e.feature.properties.label + ' located at ' + e.latlng.lat + ', ' + e.latlng.lng);
+map.setZoom(16); 
+});
 
 
-function suppress(event) {
-  if (!event) return false;
-  if (event.preventDefault) event.preventDefault();
-  if (event.stopPropagation) event.stopPropagation();
-  if (event.stopImmediatePropagation) event.stopImmediatePropagation();
-  if (event.cancelBubble) event.cancelBubble = true;
-  return false;
-}
