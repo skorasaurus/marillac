@@ -461,52 +461,29 @@ if (!L.Browser.touch) {
   L.DomEvent.disableClickPropagation(container);
 } 
 
-// smartystreets configuration
+// mapzen-leaflet geocoder configuration 
+// for more information; see https://github.com/mapzen/leaflet-geocoder
 
-var htmlKey = "3548360835619230092";  // github    
-// var htmlKey = "3548360835023561920";  // local
-
-    $(function()
-    {
-      $('form2#submitEvent').submit(function() {
-        alert("Form submit. Verification should happen first (if necessary), then this should occur.");
-      });
-    });
-
-    var liveaddress = $.LiveAddress({
-      key: htmlKey,   // An HTML key from your account
-      debug: true,   // Show debug stuff
-      cityStatePreference: "Cleveland, OH", // prefer Cle cities
-      stateFilter: "OH", // only autcomplete ohio
-      autoMap: false,
-      geolocate: false, // we'll leave false for now, but toggle this and cityStatePreference as we do further testing
-      addresses: [{ street: '#dangerzone' }]
-    });
-
-  liveaddress.on("AddressAccepted", function(event, data, previousHandler) {
-    if (data.response.chosen)
-        console.log(data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude);
-        L.marker([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], {
-          icon: L.icon({
+var myOptions = {
+  expanded: true, 
+  position: 'topright',
+  placeholder: 'Type your address here', 
+  autocomplete: true,
+  focus: true, 
+  markers:  {icon: L.icon({
             iconUrl: "assets/img/star.png",
             iconSize: [32, 32],
             iconAnchor: [12, 28],
             popupAnchor: [0, -25]
             }),
-          riseOnHover: true
-      
-    }).addTo(map);
-    // change map to zoom on the returned coords
-    map.setView([data.response.chosen.metadata.latitude, data.response.chosen.metadata.longitude], 15);
-    previousHandler(event, data);  
-}); 
-
-
-function suppress(event) {
-  if (!event) return false;
-  if (event.preventDefault) event.preventDefault();
-  if (event.stopPropagation) event.stopPropagation();
-  if (event.stopImmediatePropagation) event.stopImmediatePropagation();
-  if (event.cancelBubble) event.cancelBubble = true;
-  return false;
 }
+};
+
+var myGeocoder = L.control.geocoder('mapzen-c3U9gXv', myOptions).addTo(map);
+
+myGeocoder.on('select', function (e) {
+  console.log('you’ve selected ' + e.feature.properties.label + ' located at ' + e.latlng.lat + ', ' + e.latlng.lng);
+map.setZoom(16); 
+});
+
+
